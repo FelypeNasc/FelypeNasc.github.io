@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    /*Color Palette */
+    --darkblue: #003B73;
+    --bgblue: #0074B7;
+    --mediumblue: #60A3D9;
+    --highlightblue: #BFD7ED;
+}
+
+header {
+    font: bold 2em "Roboto", sans-serif;
+    color: var(--highlightblue);
+    text-shadow: 1px 1px 2px var(--bgblue);
+}
+
+body {
+    background-color: var(--darkblue);    
+}
+
+main {
+    font: "Roboto",sans-serif;
+    color: var(--highlightblue);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: var(--highlightblue);
+}
+  
+a:visited {
+    color: var(--mediumblue);
+}
+a:hover {
+    color:skyblue;
+}
+a:active {
+    color: blue;
+}
+footer {
+    position: fixed;
+    bottom: 1%;
+    font-style: italic;
+    font-size: 1.1em;
+    color: var(--highlightblue);
+}
