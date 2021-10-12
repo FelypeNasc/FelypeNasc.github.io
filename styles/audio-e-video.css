@@ -3,6 +3,11 @@ body {
     color: white;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 #home {
     position: fixed;
     top: 0;
@@ -14,22 +19,17 @@ body {
     cursor: pointer;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
 #homeButton {
     width: 80px;
     font-size: 18px;
     padding: 6px;
     border: none;
-    background: rgb(150, 150, 150);
+    background: rgb(65, 65, 65);
     color: rgb(0, 0, 0);
     cursor: pointer;
 }
 
 #homeButton:hover {
-    background: rgb(65, 65, 65);
+    background: rgb(110, 110, 110);
     color: white;
 }
