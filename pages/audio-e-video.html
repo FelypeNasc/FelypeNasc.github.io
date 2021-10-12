@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,18 +11,24 @@
     <meta property="og:image" content="https://i.ytimg.com/vi/mI4Wu0Hx3Vc/hqdefault.jpg">
     <title>Tags Audio e Video</title>
     <link rel="stylesheet" href="/styles/audio-e-video.css">
+    
 </head>
 <body>
-    <h2>Audio</h2>
-    <audio controls  loop preload="auto" autoplay>
-        <source src="/arquivos/EpicSax.mp3" type="audio/mp3">
-    </audio>
-    <h2>Video</h2>
-    <video id="catjam"  muted loop preload="auto" autoplay>
-        <source src="/arquivos/CatJam.mp4" type="video/mp4">
-    </video>
     <div id="home">
+
         <button id="homeButton"><a href="/index.html">Home</a></button>
+    </div>
+    <div id="audiobox">
+        <h2>Audio</h2>
+        <audio id="epicSax" controls preload="auto" autoplay="autoplay" loop="loop" >
+            <source src="/arquivos/EpicSax.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <div id="videobox">
+        <h2>Video</h2>
+        <video muted preload="auto" autoplay loop >
+            <source src="/arquivos/CatJam.mp4" type="video/mp4">
+        </video>
     </div>
 </body>
 </html>

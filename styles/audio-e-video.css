@@ -1,14 +1,12 @@
-#catjam {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+body {
+    background-color: black;
+    color: white;
 }
 
 #home {
     position: fixed;
     top: 0;
+    left: 75%;
     color: #f1f1f1;
     width: 40px;
     padding: 20px;
@@ -26,12 +24,12 @@ a {
     font-size: 18px;
     padding: 6px;
     border: none;
-    background: #000;
-    color: #fff;
+    background: rgb(150, 150, 150);
+    color: rgb(0, 0, 0);
     cursor: pointer;
 }
 
 #homeButton:hover {
-    background: #ddd;
-    color: black;
+    background: rgb(65, 65, 65);
+    color: white;
 }
