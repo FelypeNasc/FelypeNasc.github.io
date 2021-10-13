@@ -23,6 +23,14 @@ main {
     color: var(--highlightblue);
 }
 
+h1,h2,h3,h4,h5,h6 {
+    border-radius: 5px;
+    width:200px;
+    text-align: center;
+    background-color: var(--mediumblue);
+    color: rgb(255, 255, 255);
+}
+
 a {
     text-decoration: none;
 }
@@ -32,7 +40,7 @@ a:link {
 }
   
 a:visited {
-    color: var(--mediumblue);
+    color: var(--highlightblue);
 }
 a:hover {
     color:skyblue;
@@ -44,6 +52,6 @@ footer {
     position: fixed;
     bottom: 1%;
     font-style: italic;
-    font-size: 1.1em;
+    font-size: 1em;
     color: var(--highlightblue);
 }
