@@ -15,21 +15,29 @@ header {
 }
 
 body {
-    background-color: var(--darkblue);    
+    background-color: var(--darkblue);
 }
 
 main {
     font: "Roboto",sans-serif;
     color: var(--highlightblue);
+    align-content: center;
 }
 
 h1,h2,h3,h4,h5,h6 {
     border-radius: 5px;
-    width:200px;
-    text-align: center;
+    width: 200px;
     background-color: var(--mediumblue);
     color: rgb(255, 255, 255);
+    text-align: center;
 }
+
+.topics {
+    margin: 0;
+    padding: 0%;
+    width: max-content;
+    text-align: center;
+}   
 
 a {
     text-decoration: none;
