@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #canvas {
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <p>Height: <span id="canvas-height"></span>Width: <span id="width"></span></p>
+    <canvas id="canvas"></canvas>
+    <script>
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+        let cHeight = document.getElementById('canvas-height');
+        let cWidth = document.getElementById('canvas-width');
+        
+        canvas.height = window.innerHeight - 6;
+        canvas.width = window.innerWidth - 6;
+        
+        ctx.fillStyle = 'red';
+        for (var i = 0; i < 15; i++){
+            for (var j = 0; j < 37; j++){
+                ctx.fillStyle = 'rgb(' + Math.floor(255 - 42.5 * i) + ',' +
+                                Math.floor(255 - 42.5 * j) + ',0)';
+                ctx.fillRect(j * 50, i * 50, 50, 50);
+            }
+        }
+    </script>
+</body>
+</html>
