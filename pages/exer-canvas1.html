@@ -28,7 +28,7 @@
         }
 
         #canvas {
-            border-top: 3px solid black;
+            border: 3px solid black;
             background-color: white;
         }
 
@@ -84,14 +84,14 @@
         let outputSize = document.getElementById("output-size")
         outputSize.innerHTML = brushSize.value;
         
-        // load functio
+        // load function
         window.addEventListener("load", () => {
             const canvas = document.getElementById("canvas");
             const cntx = canvas.getContext("2d");
-
+            
             //canvas size
-            canvas.height = window.innerHeight;
-            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight - 39;
+            canvas.width = window.innerWidth - 6;
 
             // inner variables
             let drawing = false;
@@ -112,10 +112,10 @@
                 cntx.lineWidth = brushSize.value;
                 cntx.lineCap = "round";
 
-                cntx.lineTo(e.clientX, e.clientY);
+                cntx.lineTo(e.clientX - 2, e.clientY - 35);
                 cntx.stroke();
                 cntx.beginPath();
-                cntx.moveTo(e.clientX, e.clientY);
+                cntx.moveTo(e.clientX - 2, e.clientY - 35);
 
             }
             // listeners
