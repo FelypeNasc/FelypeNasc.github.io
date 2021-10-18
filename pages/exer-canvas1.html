@@ -4,136 +4,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício Canvas - Questão 2</title>
+    <title>Document</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            background-color: rgb(65, 65, 65);
+            margin: 0;
             overflow: hidden;
         }
-
-        #home-button {
-            width: 80px;
-            font-size: 18px;
-            padding: 6px;
-            border: none;
-            background: rgb(0, 0, 0);
-            color: white;
-            cursor: pointer;
+        #texto {
+            position: absolute;
+            font-size: 50px;
+            z-index: 3;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -400%);
+            padding: 10px;
         }
-
         #canvas {
-            border: 3px solid black;
-            background-color: white;
-        }
-
-        #reset-canvas {
-            width: 60px;
-            height: 25px;
-            font-size: 16px;
-            font-weight: bold;
-            border: none;
-        }
-
-        #top-bar {
-            display: flex;
-            justify-content: left;
-            align-items: center;
-        }
-
-        .topbar-item {
-            padding-right: 15px;
-            color: white;
-        }
-
-        output {
-            padding-right: 30px;
+            position: relative;
+            z-index: 1;
         }
     </style>
 </head>
 <body>
-        <div id="top-bar">
-        <div class="topbar-item">
-            <a href="/index.html">
-                <button id="home-button">Voltar</button>
-            </a>
-        </div>
-        <p class="topbar-item" id=""> Brush Size </p>
-        <div class="topbar-item">
-            <input id="brush-size" type="range" min="1" max="30" value="1">
-        </div>
-        <output id="output-size" class="topbar-item"></output>
-
-        <button id="reset-canvas">Apagar</button>
-    </div>
-    <canvas id="canvas">
-        Seu navegador não suporta o elemento Canvas. Por favor, atualize seu navegador.
-    </canvas>
+    <canvas id="canvas"></canvas>
     <script>
-
-        // variables
-        const resetButton = document.getElementById("reset-canvas")
         const canvas = document.getElementById("canvas");
-        const cntx = canvas.getContext("2d");
-        let brushSize = document.getElementById("brush-size")
-        let outputSize = document.getElementById("output-size")
-        outputSize.innerHTML = brushSize.value;
+        const ctx = canvas.getContext("2d");
+        canvas.height = window.innerHeight;
+        canvas.width = window.innerWidth;
         
-        // load function
-        window.addEventListener("load", () => {
-            const canvas = document.getElementById("canvas");
-            const cntx = canvas.getContext("2d");
-            
-            //canvas size
-            canvas.height = window.innerHeight - 39;
-            canvas.width = window.innerWidth - 6;
+        var grd = ctx.createRadialGradient(
+            canvas.width/2, canvas.height/2, 5, canvas.width/2, canvas.height/2, 800
+        );
+        grd.addColorStop(0, 'white');
+        grd.addColorStop(1, "black");
 
-            // inner variables
-            let drawing = false;
+        ctx.fillStyle = grd;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-            // start and end line functions
-            function startPosition (e) {
-                drawing = true;
-                draw(e)
-            }
-            function endPosition () {
-                drawing = false;
-                cntx.beginPath()
-            }
+        var x = 100,
+            y = 75,
+            // Radii of the white glow.
+            innerRadius = 5,
+            outerRadius = 70,
+            // Radius of the entire circle.
+            radius = 60;
 
-            // draw function 
-            function draw(e) {
-                if (!drawing) return;
-                cntx.lineWidth = brushSize.value;
-                cntx.lineCap = "round";
+        var grd2 = ctx.createRadialGradient(
+            canvas.width / 2, canvas.height / 2, 5, canvas.width / 2, canvas.height / 2, 50
+        );
+        grd2.addColorStop(0, 'black');
+        grd2.addColorStop(1, 'rgba(0,0,0,-5)');
+        ctx.beginPath();
+        ctx.fillStyle = grd2;
+        ctx.arc(canvas.width / 2, canvas.height / 2, 250, 0, Math.PI *2);
+        ctx.fill();
 
-                cntx.lineTo(e.clientX - 2, e.clientY - 35);
-                cntx.stroke();
-                cntx.beginPath();
-                cntx.moveTo(e.clientX - 2, e.clientY - 35);
+        var grd3 = ctx.createRadialGradient(
+            canvas.width / 2, canvas.height / 2, 600, canvas.width / 2, canvas.height / 2, 550
+        );
+        grd3.addColorStop(0, 'rgba(0,0,0,-5)')
+        grd3.addColorStop(1, 'black')
 
-            }
-            // listeners
-            canvas.addEventListener ("mousedown", startPosition);
-            canvas.addEventListener ("mouseup", endPosition);
-            canvas.addEventListener ("mousemove", draw);
-            
-        });
-        
-        // brush size listener
-        brushSize.addEventListener ("input", () => {
-            outputSize.innerHTML = brushSize.value
-        });
-        
-        resetButton.addEventListener("mousedown", () =>{
-            cntx.clearRect(0, 0, canvas.width, canvas.height);
-        });
+        ctx.beginPath();
+        ctx.lineWidth = 50;
+        ctx.strokeStyle = grd3;
+        ctx.arc(canvas.width / 2, canvas.height / 2, 600, 0, Math.PI *2);
+        ctx.stroke();
 
+        var grd4 = ctx.createRadialGradient(
+            canvas.width / 2, canvas.height / 2, 500, canvas.width / 2, canvas.height / 2, 400
+        );
+        grd4.addColorStop(0, 'rgba(0,0,0,-5)')
+        grd4.addColorStop(1, 'black')
+
+        ctx.beginPath();
+        ctx.lineWidth = 50;
+        ctx.strokeStyle = grd4;
+        ctx.arc(canvas.width / 2, canvas.height / 2, 500, 0, Math.PI *2);
+        ctx.stroke();
+
+        var grd5 = ctx.createRadialGradient(
+            canvas.width / 2, canvas.height / 2, 400, canvas.width / 2, canvas.height / 2, 200
+        );
+        grd5.addColorStop(0, 'rgba(0,0,0,-5)')
+        grd5.addColorStop(1, 'black')
+
+        ctx.beginPath();
+        ctx.lineWidth = 50;
+        ctx.strokeStyle = grd5;
+        ctx.arc(canvas.width / 2, canvas.height / 2, 400, 0, Math.PI *2);
+        ctx.stroke();
+
+        var grd6 = ctx.createRadialGradient(
+            canvas.width / 2, canvas.height / 2, 300, canvas.width / 2, canvas.height / 2, 0
+        );
+        grd6.addColorStop(0, 'rgba(0,0,0,-5)')
+        grd6.addColorStop(1, 'black')
+
+        ctx.beginPath();
+        ctx.lineWidth = 50;
+        ctx.strokeStyle = grd6;
+        ctx.arc(canvas.width / 2, canvas.height / 2, 300, 0, Math.PI *2);
+        ctx.stroke();
+
+        var grd7 = ctx.createRadialGradient(
+            canvas.width / 2, canvas.height / 2, 190, canvas.width / 2, canvas.height / 2, 0
+        );
+        grd7.addColorStop(0, 'rgba(0,0,0,-5)')
+        grd7.addColorStop(1, 'black')
+
+        ctx.beginPath();
+        ctx.lineWidth = 50;
+        ctx.strokeStyle = grd7;
+        ctx.arc(canvas.width / 2, canvas.height / 2, 200, 0, Math.PI *2);
+        ctx.stroke();
+
+        var grd8 = ctx.createRadialGradient(
+            canvas.width / 2, canvas.height / 2, 80, canvas.width / 2, canvas.height / 2, 0
+        );
+        grd8.addColorStop(0, 'rgba(0,0,0,-5)')
+        grd8.addColorStop(1, 'black')
+
+        ctx.beginPath();
+        ctx.lineWidth = 50;
+        ctx.strokeStyle = grd8;
+        ctx.arc(canvas.width / 2, canvas.height / 2, 100, 0, Math.PI *2);
+        ctx.stroke();
     </script>
 </body>
 </html>
