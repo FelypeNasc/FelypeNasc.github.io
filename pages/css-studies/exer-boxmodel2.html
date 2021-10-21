@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Model 2</title>
+    <style>
+        #ov-visible {
+            width: 400px;
+            height: 400px;
+            overflow: visible;
+        }
+        #ov-hidden {
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+        }        
+        #ov-scroll {
+            width: 400px;
+            height: 400px;
+            overflow: scroll;
+        }        
+        #ov-auto {
+            width: 400px;
+            height: 500px;
+            overflow: auto;
+        }
+        p {
+            font-size: 30px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Representação do overflow "visible"</p>
+    <div id="ov-visible">
+        <img src="https://blog.cobasi.com.br/wp-content/uploads/2020/11/canario-da-terra-principal.png" alt="passarinho-canário">
+    </div><br /><br /><br /><br />
+
+    <p>Representação do overflow "hidden"</p>
+    <div id="ov-hidden">
+        <img src="https://blog.cobasi.com.br/wp-content/uploads/2020/11/canario-da-terra-principal.png" alt="passarinho-canário">
+    </div>
+
+    <p>Representação do overflow "scroll"</p>
+    <div id="ov-scroll">
+        <img src="https://blog.cobasi.com.br/wp-content/uploads/2020/11/canario-da-terra-principal.png" alt="passarinho-canário">
+    </div>
+
+    <p>Representação do overflow "auto"</p>
+    <div id="ov-auto">
+        <img src="https://blog.cobasi.com.br/wp-content/uploads/2020/11/canario-da-terra-principal.png" alt="passarinho-canário">
+    </div>
+
+</body>
+</html>
