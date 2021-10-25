@@ -9,8 +9,8 @@
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-  }
+    width: 8px;
+}
   
   /* Track */
 ::-webkit-scrollbar-track {
@@ -33,18 +33,19 @@
 
 header {
     background: linear-gradient(-45deg, #60A3D9, #031750, #030030);
-    animation: gradient2 10s ease infinite;
+    animation: gradient2 15s ease infinite;
     background-size: 600% 600%;
     border-radius: 10px;
     font: bold 2.5em "Roboto", sans-serif;
     color: var(--highlightblue);
-    text-shadow: 2px 3px 3px var(--bgblue);
+    text-shadow: 1px 1px 3px var(--bgblue);
     width: 500px;
     text-align: center;
     margin-top: 60px;
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0px 0px 10px var(--bgblue);
 }
 
 header span {
@@ -82,11 +83,9 @@ main {
     overflow: auto;
 }
 
-
-
 h1 {
     background: linear-gradient(-45deg, #60A3D9, #031750, #030030);
-    animation: gradient2 10s ease infinite;
+    animation: gradient2 15s ease infinite;
     background-size: 600% 600%;
     border-radius: 10px;
     text-align: center;
