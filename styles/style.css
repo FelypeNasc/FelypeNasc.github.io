@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
 :root {
     /*Color Palette */
     --darkblue: #003B73;
@@ -11,24 +10,21 @@
 ::-webkit-scrollbar {
     width: 8px;
 }
-  
-  /* Track */
+
 ::-webkit-scrollbar-track {
-    background: var(--darkblue); 
+    background: var(--darkblue);
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
-   
-  /* Handle */
+
 ::-webkit-scrollbar-thumb {
-    background: var(--bgblue); 
+    background: var(--bgblue);
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
-  
-  /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--mediumblue); 
+    background: var(--mediumblue);
 }
 
 header {
@@ -53,23 +49,23 @@ header span {
 }
 
 body {
-	background: linear-gradient(-45deg, #030030, #031750, #60A3D9);
-	background-size: 500% 500%;
-	animation: gradient 15s ease infinite;
-	height: 600vh;
+    background: linear-gradient(-45deg, #030030, #031750, #60A3D9);
+    background-size: 500% 500%;
+    animation: gradient 15s ease infinite;
+    height: 600vh;
     overflow: hidden;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 50% 100%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 main {
@@ -95,21 +91,20 @@ h1 {
 }
 
 @keyframes gradient2 {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 0%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
 }
 
 .topics-box {
     width: 400px;
     margin: auto;
-
 }
 
 .topic-title {
@@ -136,15 +131,19 @@ a {
     text-decoration: none;
     color: var(--darkblue);
 }
+
 a:link {
     color: var(--darkblue);
-} 
+}
+
 a:visited {
     color: var(--darkblue);
 }
+
 a:hover {
-    color:skyblue;
+    color: skyblue;
 }
+
 a:active {
     color: blue;
 }

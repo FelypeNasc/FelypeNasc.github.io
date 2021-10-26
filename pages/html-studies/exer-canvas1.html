@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
             margin: 0;
             overflow: hidden;
         }
+
         #texto {
             position: absolute;
             font-size: 50px;
@@ -20,6 +22,7 @@
             transform: translate(-50%, -400%);
             padding: 10px;
         }
+
         #homeButton {
             position: absolute;
             z-index: 2;
@@ -31,11 +34,13 @@
             color: white;
             cursor: pointer;
         }
+
         #homeButton:hover {
             background-color: #003B73;
         }
     </style>
 </head>
+
 <body>
     <div id="home">
         <a href="/index.html"><button id="homeButton">Voltar</button></a>
@@ -46,9 +51,9 @@
         const ctx = canvas.getContext("2d");
         canvas.height = window.innerHeight;
         canvas.width = window.innerWidth;
-        
+
         var grd = ctx.createRadialGradient(
-            canvas.width/2, canvas.height/2, 5, canvas.width/2, canvas.height/2, 800
+            canvas.width / 2, canvas.height / 2, 5, canvas.width / 2, canvas.height / 2, 800
         );
         grd.addColorStop(0, 'white');
         grd.addColorStop(1, "black");
@@ -71,7 +76,7 @@
         grd2.addColorStop(1, 'rgba(0,0,0,-5)');
         ctx.beginPath();
         ctx.fillStyle = grd2;
-        ctx.arc(canvas.width / 2, canvas.height / 2, 250, 0, Math.PI *2);
+        ctx.arc(canvas.width / 2, canvas.height / 2, 250, 0, Math.PI * 2);
         ctx.fill();
 
         var grd3 = ctx.createRadialGradient(
@@ -83,7 +88,7 @@
         ctx.beginPath();
         ctx.lineWidth = 50;
         ctx.strokeStyle = grd3;
-        ctx.arc(canvas.width / 2, canvas.height / 2, 600, 0, Math.PI *2);
+        ctx.arc(canvas.width / 2, canvas.height / 2, 600, 0, Math.PI * 2);
         ctx.stroke();
 
         var grd4 = ctx.createRadialGradient(
@@ -95,7 +100,7 @@
         ctx.beginPath();
         ctx.lineWidth = 50;
         ctx.strokeStyle = grd4;
-        ctx.arc(canvas.width / 2, canvas.height / 2, 500, 0, Math.PI *2);
+        ctx.arc(canvas.width / 2, canvas.height / 2, 500, 0, Math.PI * 2);
         ctx.stroke();
 
         var grd5 = ctx.createRadialGradient(
@@ -107,7 +112,7 @@
         ctx.beginPath();
         ctx.lineWidth = 50;
         ctx.strokeStyle = grd5;
-        ctx.arc(canvas.width / 2, canvas.height / 2, 400, 0, Math.PI *2);
+        ctx.arc(canvas.width / 2, canvas.height / 2, 400, 0, Math.PI * 2);
         ctx.stroke();
 
         var grd6 = ctx.createRadialGradient(
@@ -119,7 +124,7 @@
         ctx.beginPath();
         ctx.lineWidth = 50;
         ctx.strokeStyle = grd6;
-        ctx.arc(canvas.width / 2, canvas.height / 2, 300, 0, Math.PI *2);
+        ctx.arc(canvas.width / 2, canvas.height / 2, 300, 0, Math.PI * 2);
         ctx.stroke();
 
         var grd7 = ctx.createRadialGradient(
@@ -131,7 +136,7 @@
         ctx.beginPath();
         ctx.lineWidth = 50;
         ctx.strokeStyle = grd7;
-        ctx.arc(canvas.width / 2, canvas.height / 2, 200, 0, Math.PI *2);
+        ctx.arc(canvas.width / 2, canvas.height / 2, 200, 0, Math.PI * 2);
         ctx.stroke();
 
         var grd8 = ctx.createRadialGradient(
@@ -143,8 +148,9 @@
         ctx.beginPath();
         ctx.lineWidth = 50;
         ctx.strokeStyle = grd8;
-        ctx.arc(canvas.width / 2, canvas.height / 2, 100, 0, Math.PI *2);
+        ctx.arc(canvas.width / 2, canvas.height / 2, 100, 0, Math.PI * 2);
         ctx.stroke();
     </script>
 </body>
+
 </html>

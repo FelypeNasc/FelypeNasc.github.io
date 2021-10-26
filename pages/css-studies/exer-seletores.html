@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>Exercício de Seletores</title>
     <style>
-        h1 + p { 
+        h1+p {
             color: aliceblue;
             background-color: black;
             width: max-content;
         }
 
-        h1 + p::before{
+        h1+p::before {
             content: "";
         }
 
-        div > h1 {
+        div>h1 {
             font-style: italic;
         }
 
         p::before {
             content: "✪ ";
         }
+
         #desenvolvimento {
             width: 150px;
             background-color: black;
             text-align: center;
-            color:white;
+            color: white;
         }
 
         #enredo {
@@ -35,31 +37,40 @@
             color: honeydew;
         }
 
-        .pes{
+        .pes {
             color: tomato;
         }
     </style>
 </head>
+
 <body>
     <div id="home">
         <a href="/index.html"><button id="homeButton">Voltar</button></a>
     </div>
     <div>
         <h1>Castlevania: Symphony of the Night</h1>
-        <p>Castlevania: Symphony of the Night é um jogo de ação-aventura 2D desenvolvido e distribuído pela Konami em 1997.</p>
-        <p class="pes">Ele é o 13º título da série Castlevania, sendo o primeiro a ser lançado para o console PlayStation e a sequência cronológica de Castlevania: Rondo of Blood.</p>  
+        <p>Castlevania: Symphony of the Night é um jogo de ação-aventura 2D desenvolvido e distribuído pela Konami em
+            1997.</p>
+        <p class="pes">Ele é o 13º título da série Castlevania, sendo o primeiro a ser lançado para o console
+            PlayStation e a sequência cronológica de Castlevania: Rondo of Blood.</p>
     </div>
     <div>
         <h3 id="enredo">Enredo</h3>
-        <p class="pes">Symphony of the Night inicia durante o final de Rondo of Blood, 
-            onde Richter Belmont confronta e derrota o Conde Dracula. Quatro anos depois, em 1796, Richter some e o castelo de Dracula reaparece.
-            Alucard chega ao castelo para destruí-lo, encontrando-se com Maria Renard, que lutou ao lado de Richter e está em sua procura.</p>
+        <p class="pes">Symphony of the Night inicia durante o final de Rondo of Blood,
+            onde Richter Belmont confronta e derrota o Conde Dracula. Quatro anos depois, em 1796, Richter some e o
+            castelo de Dracula reaparece.
+            Alucard chega ao castelo para destruí-lo, encontrando-se com Maria Renard, que lutou ao lado de Richter e
+            está em sua procura.</p>
     </div>
     <div>
         <h3 id="desenvolvimento">Desenvolvimento</h3>
-        <p class="pes">Em 1994, o desenvolvimento de um novo jogo Castlevania foi iniciado, com intenção de lançamento para o Sega 32X, 
-            retroativamente conhecido pelo título The Bloodletting, que chegou a possuir um protótipo mas, devido à falha comercial do 32X, 
-            foi cancelado e os esforços foram focados no desenvolvimento para PlayStation, com o projeto recebendo algumas modificações e se tornando Symphony of the Night.</p>
+        <p class="pes">Em 1994, o desenvolvimento de um novo jogo Castlevania foi iniciado, com intenção de lançamento
+            para o Sega 32X,
+            retroativamente conhecido pelo título The Bloodletting, que chegou a possuir um protótipo mas, devido à
+            falha comercial do 32X,
+            foi cancelado e os esforços foram focados no desenvolvimento para PlayStation, com o projeto recebendo
+            algumas modificações e se tornando Symphony of the Night.</p>
     </div>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>Border elements</title>
@@ -7,9 +8,11 @@
         * {
             color: darkblue;
         }
+
         body {
             background-color: rgb(10, 0, 54);
         }
+
         main {
             background: linear-gradient(90deg, #24bbff, #2385ff);
             text-align: center;
@@ -19,7 +22,12 @@
             font-weight: bold;
             font-size: 20px;
         }
-        #box1, #box2, #box3, #box4, #box5 {
+
+        #box1,
+        #box2,
+        #box3,
+        #box4,
+        #box5 {
             margin-left: auto;
             margin-right: auto;
             width: 200px;
@@ -27,23 +35,27 @@
             text-align: center;
             background-color: aliceblue;
         }
+
         #box1 {
             border-radius: 15px;
             border-style: double;
             border-color: black;
         }
+
         #box2 {
             border-radius: 80px;
-            border-style:solid;
+            border-style: solid;
             border-width: 10px;
             border-color: blueviolet;
-        }  
+        }
+
         #box3 {
             border-radius: 30px;
             border-style: dashed;
             border-collapse: separate;
             border-color: cadetblue;
         }
+
         #box4 {
             border-style: dotted;
             border-width: 3px;
@@ -61,20 +73,22 @@
             color: white;
             cursor: pointer;
         }
+
         #homeButton:hover {
             background-color: #003B73;
         }
     </style>
 </head>
+
 <body>
     <div id="home">
         <a href="/index.html"><button id="homeButton">Voltar</button></a>
     </div>
     <div id="box1">
-        CAIXA 1 
+        CAIXA 1
     </div><br>
     <div id="box2">
-        CAIXA 2 
+        CAIXA 2
     </div><br>
     <div id="box3">
         CAIXA 3
@@ -83,4 +97,5 @@
         CAIXA 4
     </div>
 </body>
+
 </html>

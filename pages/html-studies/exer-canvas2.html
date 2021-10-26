@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício Canvas - Questão 2</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -56,8 +57,9 @@
         }
     </style>
 </head>
+
 <body>
-        <div id="top-bar">
+    <div id="top-bar">
         <div class="topbar-item">
             <a href="/index.html">
                 <button id="home-button">Voltar</button>
@@ -83,12 +85,12 @@
         let brushSize = document.getElementById("brush-size")
         let outputSize = document.getElementById("output-size")
         outputSize.innerHTML = brushSize.value;
-        
+
         // load function
         window.addEventListener("load", () => {
             const canvas = document.getElementById("canvas");
             const cntx = canvas.getContext("2d");
-            
+
             //canvas size
             canvas.height = window.innerHeight - 39;
             canvas.width = window.innerWidth - 6;
@@ -97,11 +99,11 @@
             let drawing = false;
 
             // start and end line functions
-            function startPosition (e) {
+            function startPosition(e) {
                 drawing = true;
                 draw(e)
             }
-            function endPosition () {
+            function endPosition() {
                 drawing = false;
                 cntx.beginPath()
             }
@@ -119,21 +121,22 @@
 
             }
             // listeners
-            canvas.addEventListener ("mousedown", startPosition);
-            canvas.addEventListener ("mouseup", endPosition);
-            canvas.addEventListener ("mousemove", draw);
-            
+            canvas.addEventListener("mousedown", startPosition);
+            canvas.addEventListener("mouseup", endPosition);
+            canvas.addEventListener("mousemove", draw);
+
         });
-        
+
         // brush size listener
-        brushSize.addEventListener ("input", () => {
+        brushSize.addEventListener("input", () => {
             outputSize.innerHTML = brushSize.value
         });
-        
-        resetButton.addEventListener("mousedown", () =>{
+
+        resetButton.addEventListener("mousedown", () => {
             cntx.clearRect(0, 0, canvas.width, canvas.height);
         });
 
     </script>
 </body>
+
 </html>
