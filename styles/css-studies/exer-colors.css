@@ -1,0 +1,112 @@
+html {
+    background: linear-gradient(90deg, #0f45b8, #002344);
+}
+
+main {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding: 30px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.5);
+    height: auto;
+    text-align: center;
+}
+
+section {
+    background: linear-gradient(45deg, #b6b6b6, #4b4b4b) ;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+h1 {
+    font-size: 64px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 10px;
+    color: aliceblue;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+}
+
+.first, .second {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    justify-self: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#hex > span > .first {
+    background-color: #0f45b8;
+}
+
+#hex > span > .second {
+    background-color: #0fb834;
+}
+
+#hextrans > span > .first {
+    background-color: #0f45b850;
+}
+
+#hextrans > span > .second {
+    background-color: #0fb83450;
+}
+
+#rgb > span > .first {
+    background-color: rgb(165, 100, 200);
+}
+
+#rgb > span > .second {
+    background-color: rgb(80, 180, 120);
+}
+
+#rgba > span > .first {
+    background-color: rgba(165, 100, 200, 0.5);
+}
+
+#rgba > span > .second {
+    background-color: rgba(80, 180, 120, 0.5);
+}
+
+#hsl > span > .first {
+    background-color: hsl(70, 100%, 75%);
+}
+
+#hsl > span > .second {
+    background-color: hsl(240, 60%, 56%);
+}
+
+#hsla > span > .first {
+    background-color: hsl(70, 100%, 75%, 0.5);
+}
+
+#hsla > span > .second {
+    background-color: hsl(240, 60%, 56%, 0.5);
+}
+
+#browser > span > .first {
+    background-color: red;
+}
+
+#browser > span > .second {
+    background-color: cyan;
+}
+
+#current > span > .first {
+    background-color: currentColor;
+}
+
+#current > span > .second {
+    background-color: currentColor;
+}
