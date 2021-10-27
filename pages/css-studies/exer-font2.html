@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Styling 2</title>
+    <style>
+        html {
+            background: linear-gradient(90deg, #0f45b8, #002344);
+        }
+
+        main {
+            width: 300px;
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 40px;
+        }
+
+        #a1 {
+            color: blue;
+        }
+
+        #a1:hover {
+            color: aqua;
+        }
+
+        #a1:visited {
+            color: black;
+        }
+
+        #a1:active {
+            color: aliceblue;
+        }
+
+        #a2 {
+            color: green;
+        }
+
+        #a2:hover {
+            color: greenyellow;
+        }
+
+        #a2:active {
+            color: aliceblue;
+        }
+
+        #a3 {
+            color: orangered;
+        }
+
+        #a3:hover {
+            color: orange;
+        }
+
+        #a3:active {
+            color: aliceblue;
+        }
+
+        #a4 {
+            color: palevioletred;
+        }
+
+        #a4:hover {
+            color: pink;
+        }
+
+        #a4:active {
+            color: aliceblue;
+        }
+
+        #a4:focus {
+            color: yellow;
+        }
+
+        input:focus {
+            color: blue;
+            background-color: darkblue;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <a href="https://discord.com" id="a1">Discord</a><br>
+        <a href="https://www.reddit.com" id="a2">Reddit</a><br>
+        <a href="" id="a3">Teste</a><br>
+        <a href="" id="a4">Teste2</a><br>
+        <input type="text" value="Texto selecionado azul">
+    </main>
+</body>
+
+</html>

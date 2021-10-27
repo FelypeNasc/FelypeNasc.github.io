@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Styling 3</title>
+    <style>
+        html {
+            background: linear-gradient(90deg, #0f45b8, #002344);
+        }
+
+        main {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            padding: 30px;
+            background-color: aliceblue;
+            border-radius: 20px;
+            box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.5);
+            height: auto;
+            text-align: center;
+        }
+
+        @font-face {
+            font-family: 'latobold';
+            src: url('fonts/lato-bold-webfont.woff2') format('woff2'),
+                url('fonts/lato-bold-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'latoitalic';
+            src: url('fonts/lato-italic-webfont.woff2') format('woff2'),
+                url('fonts/lato-italic-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        p {
+            font-size: 50px;
+        }
+
+        #p1 {
+            font-family: 'latobold';
+        }
+
+        #p2 {
+            font-family: 'latoitalic';
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <p id="p1">Testando fonte</p>
+        <p id="p2">Testando fonte</p>
+    </main>
+</body>
+
+</html>
