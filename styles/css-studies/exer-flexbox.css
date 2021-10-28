@@ -21,7 +21,7 @@ section {
     min-height: 260px;
 }
 
-h2 {
+h3 {
     background-color: aliceblue;
     border-radius: 10px;
     max-width: 400px;
@@ -34,7 +34,7 @@ h4 {
 
 img{
     max-width: 500px;
-    margin: 16px;
+    margin: 10px;
     border-radius: 10px;
     border-style: solid;
     border-width: 2px;
@@ -58,4 +58,19 @@ img{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+}
+#section4 {
+    flex-direction: column;
+}
+
+#section4 div:nth-child(1) {
+    align-self:flex-start;
+}
+
+#section4 div:nth-child(2) {
+    align-self: center;
+}
+
+#section4 div:nth-child(3) {
+    align-self: flex-end;
 }
