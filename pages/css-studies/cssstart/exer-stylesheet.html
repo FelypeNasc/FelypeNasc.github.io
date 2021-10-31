@@ -7,22 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testando CSS</title>
     <style>
-        main {
+        p:nth-child(2){
             color: goldenrod;
             font-size: large;
             font-family: 'Courier New', Courier, monospace;
         }
     </style>
-    <link rel="stylesheet" href="/styles/css-studies/exer-stylesheet.css">
+    <link rel="stylesheet" href="exer-stylesheet.css">
 </head>
 
 <body>
     <div id="home">
         <a href="/index.html"><button id="homeButton">Voltar</button></a>
     </div>
-    <header>Essa parte foi estilizada com um stylesheet externo de CSS</header>
-    <main>Essa parte foi estilizada com um stylesheet interno de CSS</main>
-    <footer style="color: aliceblue; font-size: medium;">Essa parte foi estilizada com CSS inline</footer>
+    <p>Essa parte foi estilizada com um stylesheet externo de CSS</p>
+    <p>Essa parte foi estilizada com um stylesheet interno de CSS</p>
+    <p style="color: aliceblue; font-size: large;">Essa parte foi estilizada com CSS inline</p>
 </body>
 
 </html>

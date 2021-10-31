@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de formulário</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de ficha</h1>
+    </header>
+    <main>
+        <fieldset>
+            <legend>Personagem</legend>
+            <div>
+                <label for="charname">Nome do personagem: </label>
+                <input type="text" id="charname" placeholder="Jubileu">
+                <label for="level">LVL:</label>
+                <input type="number" style="width: 25px;" min="1" max="20"><br />
+            </div>
+            <div>
+                <label for="char-race"><b>Raça: </b></label><br />
+                <label for="humano">Humano</label>
+                <input type="radio" name="char-race" id="humano">
+                <label for="orc">Orc</label>
+                <input type="radio" name="char-race" id="orc">
+                <label for="elf">Elfo</label>
+                <input type="radio" name="char-race" id="elf">
+            </div>
+            <div>
+                <label for="char-class"><b> Classe: </b></label><br />
+                <label for="humano">Guerreiro</label>
+                <input type="radio" name="char-class" id="humano">
+                <label for="orc">Mago</label>
+                <input type="radio" name="char-class" id="orc">
+                <label for="elf">Arqueiro</label>
+                <input type="radio" name="char-class" id="elf">
+            </div>
+            <div>
+                <label for="maestria"><b>Maestria</b></label><br />
+                <label for="espada">Espada</label>
+                <input type="checkbox" id="adaga">
+                <label for="adaga">Adaga</label>
+                <input type="checkbox" id="adaga">
+                <label for="cajado">Cajado</label>
+                <input type="checkbox" id="cajado"><br />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Atributos</legend>
+            <label for="forca">Força</label>
+            <input type="number" min="1" max="50" id="forca" style="width: 25px;">
+            <label for="destreza">Destreza</label>
+            <input type="number" min="1" max="50" id="destreza" style="width: 25px;">
+            <label for="inteligencia">Inteligência</label>
+            <input type="number" min="1" max="50" id="inteligencia" style="width: 25px;">
+        </fieldset>
+        <fieldset>
+            <legend>Inventário</legend>
+            <div>
+                <h4>Seu inventário</h4>
+                <textarea name="invent" id="invent" cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+    </main>
+    <footer>
+        <p><i>Feito por Felype Nascimento.</i></p>
+    </footer>
+</body>
+</html>

@@ -1,4 +1,4 @@
-header {
+p:nth-child(3) {
     color: greenyellow;
     font: small;
     font-style: italic;
