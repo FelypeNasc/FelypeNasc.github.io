@@ -1,0 +1,477 @@
+:root {
+    --azulClaro: #00A3FF;
+    --azulEscuro: #177AEE;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: darkblue;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    font-size: 56px;
+}
+
+h3 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--azulClaro);
+}
+
+a:hover {
+    color: white;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    scroll-behavior: auto;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+#about {
+    display: block;
+    color: white;
+    background-image: url(files/wallpaper.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+nav div, nav button, nav a{
+    cursor: pointer;
+}
+
+.sideBar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    display: flex;
+    flex-direction: column;   
+    align-items: flex-end;
+}
+
+.sideBar button {
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    color: var(--azulClaro);
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+}
+
+.sideBar > div {
+    display: flex;
+    align-items: center;
+}
+
+.buttonLine {
+    width: 40px;
+    height: 1px;
+    background-color: var(--azulClaro);
+}
+
+.contentBackground {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topBar {
+    width: 100vw;
+    height: 10vh;
+    font-size: 3.2vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topBar span {
+    color: var(--azulClaro);
+}
+
+.mainAbout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.profileCard {
+    display: flex;
+    width: 24vw;
+    height: max-content;
+    min-height: max-content;
+    background-color: white;
+    color: black;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    margin: 0 2% 4% 10%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.profileCard img {
+    width: 80%;
+    max-width: 80%;
+    border-radius: 2px;
+    margin-top: 10%;
+}
+
+#profileName {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:300;
+    font-size: 24px;
+    margin: 10px;
+    line-height: 90%;
+}
+
+#profileName span:nth-child(2) {
+    font-weight:900;
+}
+
+#profileName span:nth-child(3) {
+    color: var(--azulClaro);
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#roleBox {
+    max-width: fit-content;
+    min-width: 80%;
+    background-color: var(--azulEscuro);
+    color: white;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight:600;
+    font-size: 20px;
+    border-radius: 2px;
+    margin-bottom: 10%;
+}
+
+#roleBox p {
+    margin: 10px;
+}
+
+.descriptionBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+}
+
+#helloBox {
+    width: 20%;
+    background-color: var(--azulEscuro);
+    text-align: center;
+    border-radius: 8px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 70px;
+}
+
+#helloBox p {
+    margin: 6px 0;
+}
+
+.descriptionBox p:nth-child(2) {
+    font-size: 28px;
+}
+.descriptionBox p:nth-child(3) {
+    font-size: 18px;
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+#skills {
+    background-color: white;
+}
+
+#skillsBox {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#skillsBox p {
+    margin: 0;
+}
+
+.skillLine {
+    width: 40vw;
+    height: 2px;
+    background-color: var(--azulClaro);
+}
+
+#skillsBox img {
+    max-height: 80px;
+    margin-right: 18px;
+}
+
+#figmaIcon {
+    min-width: 79px;
+}
+
+#skillsBox > div {
+    margin: 0 5vw;
+}
+
+#skillsBox h3 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+#skillsBox > div > div > div {
+    display: flex;
+    margin-top: 20px;
+}
+
+#skillsBox > div > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.skillDetails {
+    align-self: center;
+}
+
+.skillDetails p {
+    font-weight: 700;
+}
+
+.skillDetails p span {
+    font-weight: 500;
+}
+
+
+.progressBar {
+    width: 400px;
+    background-color: #EFEFEF;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progressBar span {
+    justify-self: end;
+}
+
+.progression {
+    width: 70%;
+    background-color: var(--azulClaro);
+}
+
+.html > div > div > div {
+    width: 70%;
+}
+
+.css > div > div > div {
+    width: 40%;
+}
+
+.javascript > div > div > div {
+    width: 20%;
+}
+
+.photoshop > div > div > div {
+    width: 75%;
+}
+
+.figma > div > div > div {
+    width: 50%;
+}
+
+
+.experienceBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    
+}
+
+.experienceFlexConteiner {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+.sideBox {
+    background-color: var(--azulClaro);
+    color: white;
+    height: 5vw;
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sideBox p {
+    margin: 0px;
+}
+
+.experienceDetails {
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experienceDetails p {
+    margin: 8px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.experienceDetails span {
+    color: var(--azulClaro);
+    font-weight: 300;
+}
+
+#portifolio {
+    height: 50vh;
+    background-color: black;
+    color: white;
+}
+
+.portifolioBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.portifolioBox p {
+    font-size: 24px;
+    width: 700px;
+}
+
+.portifolioBox span {
+    color: var(--azulClaro);
+}
+
+.portifolioBox img {
+    width: 80px;
+}
+
+#contact {
+    background-color: var(--azulEscuro);
+    color: white;
+}
+
+.trabalharJuntos {
+    font-size: 30px;
+    width: 50vh;
+}
+
+#contact h2 {
+    padding-top: 100px;
+}
+
+.essentialInfo img {
+    max-height: 30px;
+}
+
+.contactBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactBox > div {
+    margin: 0px;
+    margin-top: 100px;
+}
+
+.contactInfo {
+    background-color: white;
+    color: black;
+    width: 40vw;
+    height: 40vh;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.iconBackground {
+    width: 50px;
+    height: 50px;
+    background-color: var(--azulClaro);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 16px;
+}
+
+.essentialInfo > div {
+    margin: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMedia p, .essentialInfo > div > div > p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#socialMediaIcons img{
+    margin: 0 20px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.essentialInfo > div > div > p > span {
+    font-weight: 400;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    justify-self: flex-end;
+}
+
