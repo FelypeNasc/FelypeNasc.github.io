@@ -67,7 +67,7 @@ nav div, nav button, nav a{
 .sideBar {
     position: fixed;
     top: 50%;
-    right: 0;
+    right: 1%;
     display: flex;
     flex-direction: column;   
     align-items: flex-end;
