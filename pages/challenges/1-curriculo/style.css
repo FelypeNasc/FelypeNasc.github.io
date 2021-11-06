@@ -1,6 +1,7 @@
 :root {
     --azulClaro: #00A3FF;
     --azulEscuro: #177AEE;
+    --azulHover: #2cfff4;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -12,7 +13,7 @@ body {
     overflow-x: hidden;
 }
 
-h2 {
+h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     margin: 0;
@@ -67,11 +68,12 @@ nav div, nav button, nav a{
 .sideBar {
     position: fixed;
     top: 50%;
-    right: 1%;
+    right: 0.8%;
     display: flex;
     flex-direction: column;   
     align-items: flex-end;
 }
+
 
 .sideBar button {
     background-color: rgba(0, 0, 0, 0);
@@ -79,6 +81,10 @@ nav div, nav button, nav a{
     color: var(--azulClaro);
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
+}
+
+.sideBar button:hover {
+    color: white;
 }
 
 .sideBar > div {
@@ -117,7 +123,7 @@ nav div, nav button, nav a{
 .mainAbout {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }   
 
 .profileCard {
@@ -130,14 +136,13 @@ nav div, nav button, nav a{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 6px;
     margin: 0 2% 4% 10%;
     text-align: center;
     flex-wrap: wrap;
 }
 
 .profileCard img {
-    width: 80%;
     max-width: 80%;
     border-radius: 2px;
     margin-top: 10%;
@@ -147,12 +152,18 @@ nav div, nav button, nav a{
     font-family: 'Source Sans Pro', sans-serif;
     font-weight:300;
     font-size: 24px;
-    margin: 10px;
-    line-height: 90%;
+    margin: 20px;
+    line-height: 130%;
 }
 
 #profileName span:nth-child(2) {
     font-weight:900;
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+#profileName span:nth-child(2):hover {
+    font-size: 30px;
 }
 
 #profileName span:nth-child(3) {
@@ -171,10 +182,25 @@ nav div, nav button, nav a{
     font-size: 20px;
     border-radius: 2px;
     margin-bottom: 10%;
+    transition: 0.3s;
+}
+
+#roleBox:hover {
+    background-color: var(--azulClaro);
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.4);
 }
 
 #roleBox p {
     margin: 10px;
+}
+
+.blueText {
+    color: var(--azulEscuro);
+    transition: 0.3s;
+}
+
+.blueText:hover {
+    color: var(--azulClaro);
 }
 
 .descriptionBox {
@@ -182,6 +208,16 @@ nav div, nav button, nav a{
     flex-direction: column;
     justify-content: space-between;
     width: 40%;
+}
+
+.descriptionBox p:nth-child(2) {
+    font-size: 28px;
+}
+
+.descriptionBox p:nth-child(3) {
+    font-size: 18px;
+    width: 90%;
+    margin-bottom: 50px;
 }
 
 #helloBox {
@@ -193,19 +229,18 @@ nav div, nav button, nav a{
     font-weight: 600;
     font-size: 32px;
     margin-bottom: 70px;
+    transition: 0.3s;
+    justify-content: center;
+    align-self: center;
+}
+
+#helloBox:hover {
+    background-color: var(--azulClaro);
+    width: 22%;
 }
 
 #helloBox p {
     margin: 6px 0;
-}
-
-.descriptionBox p:nth-child(2) {
-    font-size: 28px;
-}
-.descriptionBox p:nth-child(3) {
-    font-size: 18px;
-    width: 90%;
-    margin-bottom: 50px;
 }
 
 #skills {
@@ -216,6 +251,11 @@ nav div, nav button, nav a{
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+}
+
+h4 {
+    text-align: center;
+    font-weight:600;
 }
 
 #skillsBox p {
@@ -389,6 +429,9 @@ nav div, nav button, nav a{
 #contact {
     background-color: var(--azulEscuro);
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .trabalharJuntos {
@@ -408,12 +451,9 @@ nav div, nav button, nav a{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.contactBox > div {
-    margin: 0px;
-    margin-top: 100px;
-}
 
 .contactInfo {
     background-color: white;
@@ -427,12 +467,17 @@ nav div, nav button, nav a{
 .iconBackground {
     width: 50px;
     height: 50px;
-    background-color: var(--azulClaro);
+    background-color: var(--azulEscuro);
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 16px;
+    transition: 0.3s;
+}
+
+.iconBackground:hover {
+    background-color: black;
 }
 
 .essentialInfo > div {
@@ -469,9 +514,8 @@ footer {
     background-color: black;
     color: white;
     display: flex;
+    align-self: center;
     justify-content: center;
-    align-items: center;
     font-size: 14px;
-    justify-self: flex-end;
+    width: 100vw;
 }
-
