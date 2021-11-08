@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -76,7 +80,7 @@ nav div, nav button, nav a{
 
 
 .sideBar button {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     border-style: none;
     color: var(--azulClaro);
     font-family: 'Poppins', sans-serif;
