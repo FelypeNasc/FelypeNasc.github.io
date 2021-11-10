@@ -621,7 +621,7 @@ footer {
     margin-top: 20px;
 }
 .backToTop img {
-    rotate: -90deg;
+    transform: rotate(-90deg);
     margin-bottom: 10px;
 }
 .backToTop span {
