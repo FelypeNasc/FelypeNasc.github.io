@@ -1,0 +1,375 @@
+@font-face { font-family: "DIN-Next-W01-Light"; 
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/3e0b2cd7-9657-438b-b4af-e04122e8f1f7.eot?#iefix") format("eot"), 
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/bc176270-17fa-4c78-a343-9fe52824e501.woff") format("woff"), 
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/3516f91d-ac48-42cd-acfe-1be691152cc4.ttf") format("truetype"), 
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/d1b1e866-a411-42ba-8f75-72bf28e23694.svg#d1b1e866-a411-42ba-8f75-72bf28e23694") format("svg"); 
+    font-display: block; 
+}
+
+@font-face { font-family: "Helvetica-W01-Bold"; 
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/f70da45a-a05c-490c-ad62-7db4894b012a.eot?#iefix") format("eot"), 
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/c5749443-93da-4592-b794-42f28d62ef72.woff") format("woff"), 
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/73805f15-38e4-4fb7-8a08-d56bf29b483b.ttf") format("truetype"), 
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/874bbc4a-0091-49f0-93ef-ea4e69c3cc7a.svg#874bbc4a-0091-49f0-93ef-ea4e69c3cc7a") format("svg"); 
+    font-display: block; 
+}
+
+:root {
+    --dinFont: "DIN-Next-W01-Light";
+    --helveticaFont: "Helvetica-W01-Bold";
+    --georgiaFont: Georgia, 'Times New Roman', Times, serif ;
+    --grayText: rgb(47, 46, 46);
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 109px;
+    color: var(--grayText);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: var(--grayText);
+}
+
+.headerConteiner {
+    padding-left: 30px;
+    width: 980px;
+    display: flex;
+    align-items: center;
+}
+
+.logoConteiner {
+    display: flex;
+    margin-right: 30px;
+}
+
+.chefOnLogo {
+    font-size: 14px;
+    font-family: var(--georgiaFont) ;
+    font-style: italic;
+    margin-bottom: 28px;
+    margin-right: 2px;
+}
+
+#logoName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#logoName h1{
+    line-height: 1em;
+    font-size: 24px;
+    font-family: var(--georgiaFont);
+    font-style:italic;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.logoNameDash {
+    width: 14px;
+    height: 4px;
+    background-color: var(--grayText);
+}
+
+#logoName1 {
+    font-size: 30px;
+    line-height: 24px;
+    letter-spacing: -0.24px;
+}
+
+#logoName2 {
+    line-height: 24px;
+    letter-spacing: -0.24px;
+}
+
+nav {
+    display: flex;
+    margin-right: 190px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 16px;
+    font-family: var(--georgiaFont);
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li:nth-child(1) {
+    width: 131px;
+}
+
+nav ul li:nth-child(2) {
+    width: 82px;
+}
+
+nav ul li:nth-child(3) {
+    width: 90px;
+}
+
+.mediaHeaderConteiner a{
+    text-decoration: none;
+}
+
+.bgVideoConteiner {
+    height: 813px;
+    width: 100%;
+    z-index: -950;
+}
+
+.bgVideoConteiner video {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -900;
+    object-fit:cover;   
+    object-position: center center; 
+}
+
+.videoText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.videoText h2 {
+    font-family: var(--georgiaFont);
+    font-size: 55px;
+    font-weight: 400;
+    color: white;
+    height: 124px;
+    width: 600px;
+    margin-top: 276px;
+    margin-bottom: 56px;
+}
+
+.dashes {
+    width: 56px;
+    height: 7px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.chefConteiner {
+    width: 100%;
+    height: 683px;
+    display: flex;
+
+}
+
+.chefImg {
+    min-width: 490px;
+    width: 51%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image: url(files/chef.webp);
+}
+
+.chefDescription {
+    width: 49%;
+    height: 100%;
+    background-color: white;
+}
+
+.chefDescriptionConteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 144px;
+    margin-left: 60px;
+}
+
+.chefDescription h2 {
+    font-family: var(--georgiaFont);
+    font-size: 47px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.chefDescription .dashes {
+    border-color: var(--grayText);
+    margin-bottom: 30px;
+}
+
+.chefDescription p {
+    width: 399px;
+    font-size: 17px;
+    line-height: 1.6em;
+    font-weight: 400;
+    font-family: var(--dinFont);
+    margin-bottom: 56px;
+}
+
+.menuSection {
+    width: 100%;
+    height: 828px;
+    background-image: url(files/section2background.webp);
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuConteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuConteiner > div{
+    width: 329px;
+    height: 528px;
+    background-color: white;
+    margin: 0 13px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.menuConteiner img {
+    width: 180px;
+    height: 180px;
+    margin-top: 46px;
+    margin-bottom: 24px;
+}
+
+.menuConteiner h4 {
+    font-size: 36px;
+    font-family: var(--georgiaFont);
+    line-height: 1em;
+    font-weight: 400;
+    width: 180px;
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+
+.menuConteiner .dashes {
+    border-color: var(--grayText);
+}
+
+.menuConteiner p {
+    width: 265px;
+    font-size: 17px;
+    line-height: 1.1em;
+    font-family: var(--dinFont);
+    margin-bottom: 36px;
+}
+
+.menuConteiner div:nth-child(1) p {
+    width: 233px;
+}
+
+.seeMenuButton {
+    width: 142px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25,2px;
+    font-family: var(--dinFont);
+}
+
+.subMenuSection {
+    width: 100%;
+    height: 867px;
+    background-image: url(files/submenubackground.webp);
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subMenuConteiner {
+    width: 569px;
+    height: 608.4px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.subMenuConteiner h2 {
+    font-size: 47px;
+    font-family: var(--georgiaFont);
+    font-weight: 400;
+    margin-top: 74px;
+    margin-bottom: 30px;
+}
+
+.subMenuConteiner h5 {
+    width: 320px;
+    font-size: 24px;
+    font-family: var(--georgiaFont);
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.subMenuConteiner .dashes {
+    border-color: var(--grayText);
+    margin-bottom: 27px;
+}
+
+.menuItems {
+    height: 173.4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.menuItems span {
+    font-size: 17px;
+    line-height: 28,9px ;
+    font-family: var(--dinFont);
+    font-weight: 400;
+}
+
+.subMenuButton {
+    width: 142px;
+    height: 49px;
+    border: solid 2px rgb(46, 46, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subMenuButton a {
+    width: 100%;
+    height: 100%;
+    font-family: var(--dinFont);
+    font-size: 15px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
