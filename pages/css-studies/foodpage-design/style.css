@@ -126,6 +126,10 @@ nav ul li:nth-child(3) {
     text-decoration: none;
 }
 
+main {
+    color: var(--grayText);
+}
+
 .bgVideoConteiner {
     height: 813px;
     width: 100%;
@@ -139,7 +143,7 @@ nav ul li:nth-child(3) {
     top: 0;
     z-index: -900;
     object-fit:cover;   
-    object-position: center center; 
+    object-position: center center;
 }
 
 .videoText {
@@ -373,3 +377,274 @@ nav ul li:nth-child(3) {
     align-items: center; 
     justify-content: center;
 }
+
+.reviewSection {
+    width: 100%;
+    height: 740px;
+}
+
+.reviewConteiner {
+    width: 100%;
+    height: 100%;
+    background-image: url(files/reviewsectionbg.webp);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.reviewConteiner > img {
+    width: 64px;
+    height: 50px;
+    margin-top: 184px;
+}
+
+.reviewConteiner h4 {
+    margin-top: 38px;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: var(--georgiaFont);
+    margin: 0;
+}
+
+.reviewText {
+    margin-top: 38px;
+}
+
+.reviewPhoto {
+    width: 136px;
+    height: 134px;
+    border-radius: 100%;
+    border: solid 2px rgb(204, 204, 204);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 39px;
+}
+
+.reviewPhoto img {
+    border-radius: 100%;
+}
+
+.reviewConteiner > p {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: var(--georgiaFont);
+    margin-top: 21px;
+}
+
+.transitionSection {
+    width: 100%;
+    height: 666px;
+    background-image: url(files/transitionbackground.webp);
+    background-attachment: fixed;
+}
+
+.contactSection {
+    width: 100%;
+    height: 761px;
+    background-color: white;
+}
+
+.contactConteiner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contactTitle h2 {
+    font-family: var(--georgiaFont);
+    font-size: 47px;
+    line-height: 0.8em;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 152px;
+}
+
+.contactTitle p {
+    font-family: var(--dinFont);
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 27px;
+    margin-bottom: 0;
+}
+
+.contactConteiner .dashes {
+    border-color: var(--grayText);
+    margin-top: 43px;
+}
+
+.contactInputs {
+    width: 577px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 33px;
+}
+
+.contactInputs h5 {
+    width: 431px;
+    font-family: var(--georgiaFont);
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 29px;
+}
+
+.contactInputs input, .contactInputs textarea {
+    width: 525px;
+    height: 32px;
+    padding: 3px 3px 3px 24px;
+    border: solid 1px black;
+    margin-bottom: 5px;
+    font-size: 17px;
+    line-height: 23.8px;
+    font-weight: 400;
+    font-family: var(--dinFont);
+}
+
+.contactMessageInput {
+    min-height: 131px;
+    height: 131px;
+    resize: none;
+}
+
+.contactSendButton {
+    width: 119px;
+    height: 32px;
+    align-self: flex-end;
+    background-color: rgb(47,46,46);
+    color: white;
+    border: none;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--dinFont);
+    font-size: 15px;
+
+
+}
+
+.contactSendButton span {
+    line-height: 32px;
+}
+
+.foodPhotosSection {
+    width: 100%;
+    display: flex;
+    height: 356.25px;
+    min-width: 980px;
+}
+
+.foodPhoto1 {
+    background-image: url(files/food1.webp);
+}
+
+.foodPhoto2 {
+    background-image: url(files/food2.webp);
+}
+
+.foodPhoto3 {
+    background-image: url(files/food3.webp);
+}
+
+.foodPhoto4 {
+    background-image: url(files/food4.webp);
+}
+
+.foodPhotosSection > div {
+    width: calc(100% / 4);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.photoOverlay {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+}
+
+.photoOverlay:hover {
+    opacity: 0.3;
+}
+
+.food
+
+footer {
+    width: 100%;
+    height: 269px;
+}
+
+.topSideFooter {
+    width: 100%;
+    height: 219px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nameAndMediaConteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.nameAndMediaConteiner span{
+    font-family: var(--helveticaFont);
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 46px;
+}
+
+.contactInfo {
+    font-family: var(--dinFont);
+    font-size: 17px;
+    margin-top: 13px;
+}
+
+.backToTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.backToTop img {
+    rotate: -90deg;
+    margin-bottom: 10px;
+}
+.backToTop span {
+    font-family: var(--dinFont);
+    font-size: 17px;
+}
+
+
+.bottomSideFooter {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--dinFont);
+    font-size: 14px;
+    color: rgb(160, 160, 160);
+}
+
+.bottomSideFooter a {
+    color: rgb(160, 160, 160);
+    text-decoration: underline;
+}
+
