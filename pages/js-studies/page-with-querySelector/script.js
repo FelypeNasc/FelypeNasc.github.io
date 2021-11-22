@@ -63,6 +63,8 @@ function firstAlbum() {
 }
 firstAlbum();
 
+// ------------- second album --------------
+
 function secondAlbum() {
     //element appending
     document.querySelector("main").appendChild(document.createElement("section"));
@@ -77,6 +79,8 @@ function secondAlbum() {
     document.querySelector("#secondAlbum > p").innerHTML = "Meteora is the second studio album by American rock band Linkin Park. It was released on March 25, 2003, through Warner Bros. Records, following Reanimation, a collaboration album which featured remixes of songs included on their 2000 debut studio album Hybrid Theory. The album was produced by the band alongside Don Gilmore. The title Meteora is taken from the Greek Orthodox monasteries originally bearing the name. Meteora has a similar sound to Hybrid Theory, as described by critics, and the album took almost a year to be recorded. It is the first Linkin Park studio album to feature bassist Dave Farrell after he rejoined the band in 2000 after temporarily touring with other bands."
 }
 secondAlbum();
+
+// ------------- third album --------------
 
 function thirdAlbum() {
     //element appending
@@ -93,6 +97,8 @@ function thirdAlbum() {
 }
 thirdAlbum();
 
+// ------------- fourth album --------------
+
 function fourthAlbum() {
     //element appending
     document.querySelector("main").appendChild(document.createElement("section"));
@@ -107,6 +113,8 @@ function fourthAlbum() {
     document.querySelector("#fourthAlbum > p").innerHTML = "A Thousand Suns is the fourth studio album by American rock band Linkin Park, released on September 8, 2010 by Machine Shop Recordings and Warner Bros. Records. It was recorded from November 2008 to August 2010 at NRG Recording Studios in North Hollywood, California, and was produced by Rick Rubin and band member Mike Shinoda, who both produced the band's previous album Minutes to Midnight (2007)."
 }
 fourthAlbum();
+
+// ------------- fifth album --------------
 
 function fifthAlbum() {
     //element appending
@@ -123,6 +131,8 @@ function fifthAlbum() {
 }
 fifthAlbum();
 
+// ------------- sixth album --------------
+
 function sixthAlbum() {
     //element appending
     document.querySelector("main").appendChild(document.createElement("section"));
@@ -137,6 +147,8 @@ function sixthAlbum() {
     document.querySelector("#sixthAlbum > p").innerHTML = "The Hunting Party is the sixth studio album by American rock band Linkin Park, released on June 13, 2014 by Machine Shop Recordings and Warner Bros. Records. Produced by band members Brad Delson and Mike Shinoda, it was recorded at Larrabee Studios in Van Nuys, California, EastWest Studios in Hollywood, and Glenwood Place Studios in Los Angeles, and was recorded from May 2013 to April 2014. It is the band's first studio album since Meteora (2003) not to be produced by Rick Rubin, who had co-produced the band's previous three albums Minutes to Midnight (2007), A Thousand Suns (2010), and Living Things (2012). The Hunting Party marks a departure from the electronic rock sound of A Thousand Suns and Living Things, and was described by Shinoda as simply 'a rock record' serving as a statement by the band against contemporary mainstream and active rock bands, whom he accused of 'trying to be other bands and playing it safe'. The album's title is a contextual metaphor, with the band being the 'party' that is 'hunting' to bring back the 'energy and soul' of rock music."
 }
 sixthAlbum();
+
+// ------------- seventh album --------------
 
 function seventhAlbum() {
     //element appending
