@@ -132,7 +132,7 @@ function sixthAlbum() {
     document.querySelector("#sixthAlbum").appendChild(document.createElement("p"))
 
     //element inner html
-    document.querySelector("#sixthAlbum > h3").innerHTML = "Hunting Party (2014)"
+    document.querySelector("#sixthAlbum > h3").innerHTML = "The Hunting Party (2014)"
     document.querySelector("#sixthAlbum > img").setAttribute("src", "assets/huntingParty.jpg")
     document.querySelector("#sixthAlbum > p").innerHTML = "The Hunting Party is the sixth studio album by American rock band Linkin Park, released on June 13, 2014 by Machine Shop Recordings and Warner Bros. Records. Produced by band members Brad Delson and Mike Shinoda, it was recorded at Larrabee Studios in Van Nuys, California, EastWest Studios in Hollywood, and Glenwood Place Studios in Los Angeles, and was recorded from May 2013 to April 2014. It is the band's first studio album since Meteora (2003) not to be produced by Rick Rubin, who had co-produced the band's previous three albums Minutes to Midnight (2007), A Thousand Suns (2010), and Living Things (2012). The Hunting Party marks a departure from the electronic rock sound of A Thousand Suns and Living Things, and was described by Shinoda as simply 'a rock record' serving as a statement by the band against contemporary mainstream and active rock bands, whom he accused of 'trying to be other bands and playing it safe'. The album's title is a contextual metaphor, with the band being the 'party' that is 'hunting' to bring back the 'energy and soul' of rock music."
 }
