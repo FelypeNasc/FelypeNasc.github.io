@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Feedback pedido na Zeca Lanches</title>
+</head>
+<body>
+    <header>
+        <h1>Feedback Zeca Lanches</h1>
+        <img src="https://hdwallsource.com/img/2014/4/wonderful-hamburger-wallpaper-42083-43074-hd-wallpapers.jpg" alt="hamburguer">
+    </header>
+    <main>
+        <form action="">
+            <h2>Dados Pessoais</h2>
+            <div class="formConteiner">
+                <div class="formSubConteiner">
+                    <h3>Nome</h3>
+                    <input type="text" id="formsName" name="formsName" placeholder="Pedrin">
+                </div>
+                <div class="formSubConteiner">
+                    <h3>Sobrenome</h3>
+                    <input type="text" id="formsSurname" name="formsSurname" placeholder="Silva">
+                </div>
+            </div>
+            <div class="formConteiner">
+                <div class="formSubConteiner">
+                    <h3>Email</h3>
+                    <input type="text" id="formsEmail" name="formsEmail">
+                </div>
+                <div class="formSubConteiner">
+                    <h3>Telefone</h3>
+                    <input type="text" id="formsPhone" placeholder="(xx)xxxxx-xxxx" name="formsPhone">
+                </div>
+            </div>
+            <div class="formsConteiner">
+                <div class="formsSubConteiner">
+                    <h3>Comentário</h3>
+                    <textarea name="" id="formsComment" cols="30" rows="10" name="formsComment"></textarea>
+                </div>
+            </div>
+            <input type="button" value="Enviar" id="sendButton" onclick="sendForms()">
+        </form>
+    </main>
+    <div id="destinationConteiner">
+    </div>
+    <footer></footer>
+</body>
+</html>
