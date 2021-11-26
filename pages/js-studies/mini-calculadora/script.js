@@ -17,30 +17,30 @@ function createResult() {
 }
 
 function valuePlus() {
-    let n1 = parseFloat(document.getElementById("numero1").value)
-    let n2 = parseFloat(document.getElementById("numero2").value)
-    let resultN = n1+n2
+    let n1 = parseFloat(document.getElementById("numero1").value);
+    let n2 = parseFloat(document.getElementById("numero2").value);
+    let resultN = n1+n2;
     document.querySelector("#resultOutput").innerHTML = resultN;   
 }
 
 function valueMinus() {
-    let n1 = parseFloat(document.getElementById("numero1").value)
-    let n2 = parseFloat(document.getElementById("numero2").value)
-    let resultN = n1-n2
+    let n1 = parseFloat(document.getElementById("numero1").value);
+    let n2 = parseFloat(document.getElementById("numero2").value);
+    let resultN = n1-n2;
     document.querySelector("#resultOutput").innerHTML = resultN;
 }
 
 function valueMultiply() {
-    let n1 = parseFloat(document.getElementById("numero1").value)
-    let n2 = parseFloat(document.getElementById("numero2").value)
-    let resultN = n1*n2
+    let n1 = parseFloat(document.getElementById("numero1").value);
+    let n2 = parseFloat(document.getElementById("numero2").value);
+    let resultN = n1*n2;
     document.querySelector("#resultOutput").innerHTML = resultN;   
 }
 
 function valueDivide() {
-    let n1 = parseFloat(document.getElementById("numero1").value)
-    let n2 = parseFloat(document.getElementById("numero2").value)
-    let resultN = n1/n2
+    let n1 = parseFloat(document.getElementById("numero1").value);
+    let n2 = parseFloat(document.getElementById("numero2").value);
+    let resultN = n1/n2;
     document.querySelector("#resultOutput").innerHTML = resultN;   
 }
 
@@ -56,6 +56,6 @@ function initEventos() {
     document.querySelector("#btnMinus").addEventListener("click", valueMinus);
     document.querySelector("#btnMultiply").addEventListener("click", valueMultiply);
     document.querySelector("#btnDivide").addEventListener("click", valueDivide);
-    document.querySelector("#btnReset").addEventListener("click", resetInputs)
+    document.querySelector("#btnReset").addEventListener("click", resetInputs);
 }
-window.addEventListener("load", initEventos)
+window.addEventListener("load", initEventos);

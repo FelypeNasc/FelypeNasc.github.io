@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Picles das Galáxias</title>
+</head>
+<body>
+    <header>
+        <div class="headerConteiner">
+            <div class="nameConteiner">
+                <img src="assets/picles.png" alt="picles">
+                <div class="hConteiner">
+                    <h2>HAMBURGUERIA</h2>
+                    <h1>Picles das Galáxias</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="mainConteiner">
+            <img src="assets/hamburguer.jpg" alt="hamburguer" id="hamburguerImg">
+            <h2>Pedido de Hamburguer</h2>
+            <form action="">
+                <fieldset>
+                    <legend>Tipo de Pão</legend>
+                    <div>
+                        <input type="radio" name="breadType" id="bread-paoFrances">
+                        <label for="bread-paoFrances">Pão Francês (R$3,00)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="breadType" id="bread-paoAustraliano">
+                        <label for="bread-paoAustraliano">Pão Australiano (R$8,00)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="breadType" id="bread-paoBrioche">
+                        <label for="bread-paoBrioche">Brioche (R$6,00)</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Tipo de Carne</legend>
+                    <div>
+                        <input type="radio" name="burguerType" id="burguer-picanha">
+                        <label for="burguer-picanha">Hambúrguer de Picanha (R$13,00)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="burguerType" id="burguer-costela">
+                        <label for="burguer-costela">Hambúrguer de Costela (R$10,00)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="burguerType" id="burguer-vegano">
+                        <label for="burguer-vegano">Hambúrguer Vegano (R$12,00)</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Tipo de Salada</legend>
+                    <div>
+                        <input type="radio" name="saladType" id="salad-Alface">
+                        <label for="salad-Alface">Alface (R$1,50)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="saladType" id="salad-Tomate">
+                        <label for="salad-Tomate">Tomate (R$1,50)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="saladType" id="salad-sem">
+                        <label for="salad-sem">Sem Salada (R$0,00)</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Tipo de Queijo</legend>
+                    <div>
+                        <input type="radio" name="cheeseType" id="cheese-Mussarela">
+                        <label for="cheese-Mussarela">Queijo Mussarela (R$3,00)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="cheeseType" id="cheese-Prato">
+                        <label for="cheese-Prato">Queijo Prato (R$3,00)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="cheeseType" id="cheese-Cheddar">
+                        <label for="cheese-Cheddar">Queijo Cheddar (R$5,00)</label>
+                    </div>
+                </fieldset>
+                <input type="button" value="Enviar" onclick="sendForms()" id="sendButton">
+            </form>
+        </div>
+    </main>
+    <div id="ordersConteiner">
+        
+    </div>
+</body>
+</html>
