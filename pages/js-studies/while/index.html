@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Bart</title>
+</head>
+<body>
+    <main>
+        <div class="inputConteiner">
+            <h2>Quantas vezes uma frase deve ser escrita?</h2>
+            <input type="number" name="" id="numOfPhrases">
+            <button id="sendButton" onclick="writePhrases ()"">Escrever</button>
+        </div>
+        <div class="boardConteiner">
+            <div class="boardConteiner-columns">
+                <div class="boardConteiner-columns-left" id="leftConteiner">
+                </div>
+                <div class="boardConteiner-columns-right" id="rightConteiner">
+                </div>
+            </div>
+            <p>Vezes que o quadro foi apagado: <span id="bWipeConteiner"></span></p>
+            <img src="assets/bart.png" alt="bart" id="bart"> 
+        </div>
+    </main>
+</body>
+</html>
