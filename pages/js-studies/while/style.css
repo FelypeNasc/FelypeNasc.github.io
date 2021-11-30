@@ -71,7 +71,16 @@ main {
     text-align: left;
 }
 
-.boardConteiner > p {
+#p1 {
+    position: absolute;
+    bottom: 10;
+    margin: 0;
+    font-family: var(--chalk);
+    font-size: 20px;
+    color: white;
+}
+
+#p2 {
     position: absolute;
     bottom: 0;
     margin: 0;
