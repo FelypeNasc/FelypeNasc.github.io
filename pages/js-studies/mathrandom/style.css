@@ -1,0 +1,161 @@
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --azul: #177AEE;
+    --azulHighlight: #00A3FF;
+}
+
+body {
+    margin: 0;
+    background-color: #101010;
+}
+
+header, main {
+    background-color: gainsboro;
+    border-radius: 6px;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    min-width: 660px;
+    max-width: 900px;
+    font-family: var(--poppins);
+    transition: 0.3s;
+}
+
+header {
+    background-color: var(--azul);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header:hover {
+    background-color: white;
+    color: var(--azul);
+    box-shadow: 0 0 6px 4px var(--azul);
+}
+
+main {
+    padding-bottom: 30px;
+}
+
+button {
+    font-family: var(--poppins);
+    font-weight: 500;
+    color: white;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#warningLine {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-style: italic;
+}
+
+/* Main Screen */
+
+#mainScreen {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainScreen-optionConteiner {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mainScreen-optionConteiner button{
+    border: 0;
+    border-radius: 8px;
+    height: 40px;
+    padding: 0 10px;
+    background-color: var(--azul);
+    font-size: 16px;
+    transition: 0.2s;
+    margin: 0 6px;
+}
+
+.mainScreen-optionConteiner button:hover {
+    background-color: var(--azulHighlight);
+}
+
+/* Result Screen */
+
+#raceScreen {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#raceScreen {
+    display: none;
+}
+
+#mainScreen > h3 {
+    width: 500px;
+    margin: 20px auto;
+}
+
+#sendButton {
+    background-color: var(--azul);;
+    border: 0;
+    margin-bottom: 30px;
+    width: 140px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: var(--poppins);
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#sendButton:hover {
+    background-color: var(--azulHighlight);;
+}
+
+.playerConteiner {
+    width: 500px;
+    height: 100px;
+    background-color: #222222;
+    color: white;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.playerConteiner > h3 {
+    margin: 8px 0 4px;
+}
+
+#winnerConteiner {
+    width: 400px;
+    height: 80px;
+    background-color: rgb(48, 196, 55);
+    border-radius: 8px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#winnerConteiner > h4 {
+    margin: 8px 0 2px;
+}
+
+#winnerConteiner p {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+}
+
