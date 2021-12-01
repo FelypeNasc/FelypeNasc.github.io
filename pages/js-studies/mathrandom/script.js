@@ -83,6 +83,9 @@ function customRaceCheckingLaps () {
 function changeToMainScreen () {
     mainScreen.style.display = "flex";
     raceScreen.style.display = "none";
+    customRaceLaps.value = 0;
+    customRaceScreen.style.display = "none";
+    warningInsertMessage.style.display = "none";
     pedroConteiner.innerHTML = '';
     jucaConteiner.innerHTML = '';
     ednaConteiner.innerHTML = '';
