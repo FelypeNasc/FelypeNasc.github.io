@@ -25,6 +25,7 @@ runButton.addEventListener('click', playRace);
 const customRaceScreen = document.getElementById('customRace');
 const customRaceLaps = document.getElementById('customRace-laps');
 const customRaceSendbutton = document.getElementById('customRace-sendButton');
+const warningInsertMessage = document.getElementById('warningInsertMessage');
 customRaceSendbutton.addEventListener('click', customRaceCheckingLaps)
 
 // script variables
@@ -74,6 +75,8 @@ function customRaceCheckingLaps () {
         raceName.innerHTML = 'Corrida Personalizada ('+numberOfLaps+' voltas)';
         customRaceScreen.style.display = "none";
         raceScreen.style.display = "flex";
+    } else {
+        warningInsertMessage.style.display = "block"
     }
 }
 

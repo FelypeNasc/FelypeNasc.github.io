@@ -58,6 +58,9 @@ button {
 
 #warningInsertMessage {
     display: none;
+    color: rgb(204, 37, 37);
+    font-weight: 500;
+    font-size: 18px;
 }
 
 #warningLine {
