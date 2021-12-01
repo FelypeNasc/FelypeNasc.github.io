@@ -4,9 +4,11 @@ const mainScreen = document.getElementById('mainScreen');
 const raceOptFast = document.getElementById('mainScreen-optionConteiner-op1');
 const raceOptGreat = document.getElementById('mainScreen-optionConteiner-op2');
 const raceOptEnduro = document.getElementById('mainScreen-optionConteiner-op3');
+const raceOptCustom = document.getElementById('mainScreen-optionConteiner-op4');
 raceOptFast.addEventListener('click', () => {changeToRaceScreen(0)});
 raceOptGreat.addEventListener('click', () => {changeToRaceScreen(1)});
 raceOptEnduro.addEventListener('click', () => {changeToRaceScreen(2)});
+raceOptCustom.addEventListener('click', () => {changeToRaceScreen(3)});
 headerLink.addEventListener('click', changeToMainScreen);
 
 // race screen variables
@@ -19,8 +21,14 @@ const winnerConteiner = document.getElementById('winner');
 const runButton = document.getElementById('sendButton');
 runButton.addEventListener('click', playRace);
 
+// custom screen variables
+const customRaceScreen = document.getElementById('customRace');
+const customRaceLaps = document.getElementById('customRace-laps');
+const customRaceSendbutton = document.getElementById('customRace-sendButton');
+customRaceSendbutton.addEventListener('click', customRaceCheckingLaps)
+
 // script variables
-let chosenType = '';
+let numberOfLaps = '';
 
 // base functions
 function createElementInside(location, elementType, elementID, elementClass) {
@@ -41,16 +49,32 @@ function getRandom(min, max) {
 // change screen functions
 function changeToRaceScreen (option) {
     const raceTypes = Array(10, 70, 160);
-    chosenType = raceTypes[option];
+    numberOfLaps = raceTypes[option];
     if (option == 0) {
         raceName.innerHTML = 'Corrida rápida (10 voltas)';
+        mainScreen.style.display = "none";
+        raceScreen.style.display = "flex";
     } else if (option == 1) {
         raceName.innerHTML = 'Grande Prêmio (70 voltas)';
+        mainScreen.style.display = "none";
+        raceScreen.style.display = "flex";
     } else if (option == 2) {
         raceName.innerHTML = 'Enduro (160 voltas)';
+        mainScreen.style.display = "none";
+        raceScreen.style.display = "flex";
+    } else {
+        mainScreen.style.display = "none";
+        customRaceScreen.style.display = "block";
     }
-    mainScreen.style.display = "none";
-    raceScreen.style.display = "flex";
+}
+
+function customRaceCheckingLaps () {
+    if ((customRaceLaps.value).length > 0 && customRaceLaps.value > 0) {
+        numberOfLaps = customRaceLaps.value;
+        raceName.innerHTML = 'Corrida Personalizada ('+numberOfLaps+' voltas)';
+        customRaceScreen.style.display = "none";
+        raceScreen.style.display = "flex";
+    }
 }
 
 function changeToMainScreen () {
@@ -66,14 +90,14 @@ function playRace() {
     let jucaWins = 0;
     let ednaWins = 0;
 
-    for (let i = 0; i < chosenType; i++) {
+    for (let i = 0; i < numberOfLaps; i++) {
         let pedroCarVel = 0;
         let jucaCarVel = 0;
         let ednaCarVel = 0;
         function pedroCar() {
-            let minVel = 150; 
-            let maxVel = 230;
-            let drift = 3;
+            let minVel = getRandom(100,150); 
+            let maxVel = getRandom(200,280);
+            let drift = getRandom(1,8);
             pedroCarVel = getRandom(minVel, maxVel);
             pedroCarVel = pedroCarVel-(pedroCarVel*(drift/100));
             pedroCarVel = pedroCarVel.toFixed(1);
@@ -81,9 +105,9 @@ function playRace() {
         }
         pedroCar()
         function jucaCar() {
-            let minVel = 120; 
-            let maxVel = 260;
-            let drift = 5;
+            let minVel = getRandom(100,150); 
+            let maxVel = getRandom(200,280);
+            let drift = getRandom(1,8);
             jucaCarVel = getRandom(minVel, maxVel);
             jucaCarVel = jucaCarVel-(jucaCarVel*(drift/100));
             jucaCarVel = jucaCarVel.toFixed(1);
@@ -91,9 +115,9 @@ function playRace() {
         }
         jucaCar()
         function ednaCar() {
-            let minVel = 180;
-            let maxVel = 220;
-            let drift = 1;
+            let minVel = getRandom(100,150);
+            let maxVel = getRandom(200,280);
+            let drift = getRandom(1,8);
             ednaCarVel = getRandom(minVel, maxVel);
             ednaCarVel = ednaCarVel-(ednaCarVel*(drift/100));
             ednaCarVel = ednaCarVel.toFixed(1);

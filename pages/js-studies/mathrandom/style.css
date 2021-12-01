@@ -4,6 +4,16 @@
     --azulHighlight: #00A3FF;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 body {
     margin: 0;
     background-color: #101010;
@@ -46,6 +56,10 @@ button {
     cursor: pointer;
 }
 
+#warningInsertMessage {
+    display: none;
+}
+
 #warningLine {
     position: absolute;
     bottom: 0;
@@ -70,7 +84,7 @@ button {
     justify-content: space-evenly;
 }
 
-.mainScreen-optionConteiner button{
+.mainScreen-optionConteiner button, #customRace-sendButton{
     border: 0;
     border-radius: 8px;
     height: 40px;
@@ -81,7 +95,7 @@ button {
     margin: 0 6px;
 }
 
-.mainScreen-optionConteiner button:hover {
+.mainScreen-optionConteiner button:hover, #customRace-sendButton:hover {
     background-color: var(--azulHighlight);
 }
 
@@ -159,3 +173,25 @@ button {
     font-weight: 700;
 }
 
+#customRace {
+    display: none;
+}
+
+#customRace-Conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#customRace-Conteiner input {
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+    border: 0;
+    padding: 2px 8px;
+    font-style: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
