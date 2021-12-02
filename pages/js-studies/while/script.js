@@ -43,26 +43,26 @@ function writePhrases () {
     let lastBoard = 0;
     let phrase = phraseList[Math.floor(Math.random()*phraseList.length)];
 
-    document.getElementById('leftConteiner').innerHTML = '';
-    document.getElementById('rightConteiner').innerHTML = '';
-    document.getElementById('bWipeConteiner').innerHTML = '';
+    document.getElementById('leftContainer').innerHTML = '';
+    document.getElementById('rightContainer').innerHTML = '';
+    document.getElementById('bWipeContainer').innerHTML = '';
 
     while (true) {
         
         if (pCount < numbOfPhrases) {   
             if (lPhrases < 11) {
                 lPhrases +=1;
-                setInterval(createElementInside('#leftConteiner','p', 'pL' + lPhrases, phrase), 1000);
+                setInterval(createElementInside('#leftContainer','p', 'pL' + lPhrases, phrase), 1000);
             } else if (rPhrases < 11) {
                 rPhrases +=1;
-                setInterval(createElementInside('#rightConteiner','p', 'pR'+ rPhrases, phrase), 1000);
+                setInterval(createElementInside('#rightContainer','p', 'pR'+ rPhrases, phrase), 1000);
             } else {
                 boardwipes += 1;
                 lPhrases = 0;
                 rPhrases = 0;
-                document.getElementById('leftConteiner').innerHTML = '';
-                document.getElementById('rightConteiner').innerHTML = '';
-                setInterval(createElementInside('#leftConteiner','p', 'pL' + lPhrases, phrase), 1000);
+                document.getElementById('leftContainer').innerHTML = '';
+                document.getElementById('rightContainer').innerHTML = '';
+                setInterval(createElementInside('#leftContainer','p', 'pL' + lPhrases, phrase), 1000);
                 lPhrases += 1;
             }
             pCount += 1;
@@ -70,7 +70,7 @@ function writePhrases () {
         } else {
             lastBoard = numbOfPhrases % 22 ;
             document.getElementById('lastBoard').innerHTML = lastBoard;
-            document.getElementById('bWipeConteiner').append(boardwipes);
+            document.getElementById('bWipeContainer').append(boardwipes);
             break;
         }
     }

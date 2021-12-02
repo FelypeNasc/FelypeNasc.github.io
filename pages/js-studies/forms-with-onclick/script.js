@@ -20,10 +20,10 @@ function sendForms () {
     let comentario = document.querySelector("#formsComment").value;
 
     // creating elements
-    createElementInside("#destinationConteiner", "p", "para1");
-    createElementInside("#destinationConteiner", "p", "para2");
-    createElementInside("#destinationConteiner", "p", "para3");
-    createElementInside("#destinationConteiner", "p", "para4");
+    createElementInside("#destinationContainer", "p", "para1");
+    createElementInside("#destinationContainer", "p", "para2");
+    createElementInside("#destinationContainer", "p", "para3");
+    createElementInside("#destinationContainer", "p", "para4");
 
     document.querySelector("#para1").innerHTML = "Nome do cliente: ";
     document.querySelector("#para2").innerHTML = "Email: ";

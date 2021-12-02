@@ -58,14 +58,14 @@ input {
     font-size: 14px;
 }
 
-#resultConteiner {
+#resultContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#resultConteiner h3 {
+#resultContainer h3 {
     margin-bottom: 0;
 }
 

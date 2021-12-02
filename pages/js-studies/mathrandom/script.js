@@ -1,10 +1,10 @@
 // main screen variables 
 const headerLink = document.getElementById('headerLink');
 const mainScreen = document.getElementById('mainScreen');
-const raceOptFast = document.getElementById('mainScreen-optionConteiner-op1');
-const raceOptGreat = document.getElementById('mainScreen-optionConteiner-op2');
-const raceOptEnduro = document.getElementById('mainScreen-optionConteiner-op3');
-const raceOptCustom = document.getElementById('mainScreen-optionConteiner-op4');
+const raceOptFast = document.getElementById('mainScreen-optionContainer-op1');
+const raceOptGreat = document.getElementById('mainScreen-optionContainer-op2');
+const raceOptEnduro = document.getElementById('mainScreen-optionContainer-op3');
+const raceOptCustom = document.getElementById('mainScreen-optionContainer-op4');
 raceOptFast.addEventListener('click', () => {changeToRaceScreen(0)});
 raceOptGreat.addEventListener('click', () => {changeToRaceScreen(1)});
 raceOptEnduro.addEventListener('click', () => {changeToRaceScreen(2)});
@@ -14,10 +14,10 @@ headerLink.addEventListener('click', changeToMainScreen);
 // race screen variables
 const raceScreen = document.getElementById('raceScreen');
 const raceName = document.getElementById('raceName');
-const pedroConteiner = document.getElementById('pedro');
-const jucaConteiner = document.getElementById('juca');
-const ednaConteiner = document.getElementById('edna');
-const winnerConteiner = document.getElementById('winner');
+const pedroContainer = document.getElementById('pedro');
+const jucaContainer = document.getElementById('juca');
+const ednaContainer = document.getElementById('edna');
+const winnerContainer = document.getElementById('winner');
 const runButton = document.getElementById('sendButton');
 runButton.addEventListener('click', playRace);
 
@@ -86,9 +86,9 @@ function changeToMainScreen () {
     customRaceLaps.value = 0;
     customRaceScreen.style.display = "none";
     warningInsertMessage.style.display = "none";
-    pedroConteiner.innerHTML = '';
-    jucaConteiner.innerHTML = '';
-    ednaConteiner.innerHTML = '';
+    pedroContainer.innerHTML = '';
+    jucaContainer.innerHTML = '';
+    ednaContainer.innerHTML = '';
 }
 
 function playRace() {
@@ -140,15 +140,15 @@ function playRace() {
         }
     }
     
-    pedroConteiner.innerHTML = pedroWins+' Vitórias';
-    jucaConteiner.innerHTML = jucaWins+' Vitórias';
-    ednaConteiner.innerHTML = ednaWins+' Vitórias';
+    pedroContainer.innerHTML = pedroWins+' Vitórias';
+    jucaContainer.innerHTML = jucaWins+' Vitórias';
+    ednaContainer.innerHTML = ednaWins+' Vitórias';
     
     if (pedroWins > jucaWins && pedroWins > ednaWins) {
-        winnerConteiner.innerHTML = "PEDRO!";
+        winnerContainer.innerHTML = "PEDRO!";
     } else if (jucaWins > ednaWins) {
-        winnerConteiner.innerHTML = "JUCA!";
+        winnerContainer.innerHTML = "JUCA!";
     } else {
-        winnerConteiner.innerHTML = "EDNA!";
+        winnerContainer.innerHTML = "EDNA!";
     }
 }

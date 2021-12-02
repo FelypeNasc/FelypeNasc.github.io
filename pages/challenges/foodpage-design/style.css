@@ -40,14 +40,14 @@ a {
     color: var(--grayText);
 }
 
-.headerConteiner {
+.headerContainer {
     padding-left: 30px;
     width: 980px;
     display: flex;
     align-items: center;
 }
 
-.logoConteiner {
+.logoContainer {
     display: flex;
     margin-right: 30px;
 }
@@ -122,7 +122,7 @@ nav ul li:nth-child(3) {
     width: 90px;
 }
 
-.mediaHeaderConteiner a{
+.mediaHeaderContainer a{
     text-decoration: none;
 }
 
@@ -130,13 +130,13 @@ main {
     color: var(--grayText);
 }
 
-.bgVideoConteiner {
+.bgVideoContainer {
     height: 813px;
     width: 100%;
     z-index: -950;
 }
 
-.bgVideoConteiner video {
+.bgVideoContainer video {
     height: 100%;
     width: 100%;
     position: fixed;
@@ -173,7 +173,7 @@ main {
     border-bottom: 2px solid white;
 }
 
-.chefConteiner {
+.chefContainer {
     width: 100%;
     height: 683px;
     display: flex;
@@ -196,7 +196,7 @@ main {
     background-color: white;
 }
 
-.chefDescriptionConteiner {
+.chefDescriptionContainer {
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -237,13 +237,13 @@ main {
     align-items: center;
 }
 
-.menuConteiner {
+.menuContainer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.menuConteiner > div{
+.menuContainer > div{
     width: 329px;
     height: 528px;
     background-color: white;
@@ -254,14 +254,14 @@ main {
     align-items: center;
 }
 
-.menuConteiner img {
+.menuContainer img {
     width: 180px;
     height: 180px;
     margin-top: 46px;
     margin-bottom: 24px;
 }
 
-.menuConteiner h4 {
+.menuContainer h4 {
     font-size: 36px;
     font-family: var(--georgiaFont);
     line-height: 1em;
@@ -271,11 +271,11 @@ main {
     margin-bottom: 28px;
 }
 
-.menuConteiner .dashes {
+.menuContainer .dashes {
     border-color: var(--grayText);
 }
 
-.menuConteiner p {
+.menuContainer p {
     width: 265px;
     font-size: 17px;
     line-height: 1.1em;
@@ -283,7 +283,7 @@ main {
     margin-bottom: 36px;
 }
 
-.menuConteiner div:nth-child(1) p {
+.menuContainer div:nth-child(1) p {
     width: 233px;
 }
 
@@ -311,7 +311,7 @@ main {
     align-items: center;
 }
 
-.subMenuConteiner {
+.subMenuContainer {
     width: 569px;
     height: 608.4px;
     background-color: white;
@@ -321,7 +321,7 @@ main {
     text-align: center;
 }
 
-.subMenuConteiner h2 {
+.subMenuContainer h2 {
     font-size: 47px;
     font-family: var(--georgiaFont);
     font-weight: 400;
@@ -329,7 +329,7 @@ main {
     margin-bottom: 30px;
 }
 
-.subMenuConteiner h5 {
+.subMenuContainer h5 {
     width: 320px;
     font-size: 24px;
     font-family: var(--georgiaFont);
@@ -338,7 +338,7 @@ main {
     margin-bottom: 35px;
 }
 
-.subMenuConteiner .dashes {
+.subMenuContainer .dashes {
     border-color: var(--grayText);
     margin-bottom: 27px;
 }
@@ -383,7 +383,7 @@ main {
     height: 740px;
 }
 
-.reviewConteiner {
+.reviewContainer {
     width: 100%;
     height: 100%;
     background-image: url(files/reviewsectionbg.webp);
@@ -394,13 +394,13 @@ main {
     text-align: center;
 }
 
-.reviewConteiner > img {
+.reviewContainer > img {
     width: 64px;
     height: 50px;
     margin-top: 184px;
 }
 
-.reviewConteiner h4 {
+.reviewContainer h4 {
     margin-top: 38px;
     font-size: 36px;
     font-weight: 400;
@@ -427,7 +427,7 @@ main {
     border-radius: 100%;
 }
 
-.reviewConteiner > p {
+.reviewContainer > p {
     font-size: 17px;
     font-weight: 400;
     font-family: var(--georgiaFont);
@@ -447,7 +447,7 @@ main {
     background-color: white;
 }
 
-.contactConteiner {
+.contactContainer {
     width: 100%;
     height: 100%;
     display: flex;
@@ -473,7 +473,7 @@ main {
     margin-bottom: 0;
 }
 
-.contactConteiner .dashes {
+.contactContainer .dashes {
     border-color: var(--grayText);
     margin-top: 43px;
 }
@@ -594,14 +594,14 @@ footer {
     align-items: center;
 }
 
-.nameAndMediaConteiner {
+.nameAndMediaContainer {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 32px;
 }
 
-.nameAndMediaConteiner span{
+.nameAndMediaContainer span{
     font-family: var(--helveticaFont);
     font-size: 20px;
     font-weight: 700;

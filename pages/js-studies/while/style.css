@@ -17,24 +17,24 @@ main {
     margin: 0 auto;
 }
 
-.inputConteiner {
+.inputContainer {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.inputConteiner h2 {
+.inputContainer h2 {
     margin: 10px 0 0;
 }
 
-.inputConteiner input {
+.inputContainer input {
     margin: 10px;
     width: 60px;
     text-align: center;
 }
 
-.boardConteiner {
+.boardContainer {
     width: 1080px;
     height: 740px;
     background-image: url(assets/board.png);
@@ -49,12 +49,12 @@ main {
     position: relative;
 }
 
-.boardConteiner p {
+.boardContainer p {
     margin-top: 24px;
     white-space: nowrap;
 }
 
-.boardConteiner-columns {
+.boardContainer-columns {
     margin-top: 4.5%;
     color: white;
     height: 84%;
@@ -64,7 +64,7 @@ main {
     justify-content: space-between;
 }
 
-.boardConteiner-columns-left, .boardConteiner-columns-right {
+.boardContainer-columns-left, .boardContainer-columns-right {
     width: 49%;
     height: 100%;
     line-height: 32px;

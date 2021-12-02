@@ -81,13 +81,13 @@ button {
     align-items: center;
 }
 
-.mainScreen-optionConteiner {
+.mainScreen-optionContainer {
     width: 80%;
     display: flex;
     justify-content: space-evenly;
 }
 
-.mainScreen-optionConteiner button, #customRace-sendButton{
+.mainScreen-optionContainer button, #customRace-sendButton{
     border: 0;
     border-radius: 8px;
     height: 40px;
@@ -98,7 +98,7 @@ button {
     margin: 0 6px;
 }
 
-.mainScreen-optionConteiner button:hover, #customRace-sendButton:hover {
+.mainScreen-optionContainer button:hover, #customRace-sendButton:hover {
     background-color: var(--azulHighlight);
 }
 
@@ -140,7 +140,7 @@ button {
     background-color: var(--azulHighlight);;
 }
 
-.playerConteiner {
+.playerContainer {
     width: 500px;
     height: 100px;
     background-color: #222222;
@@ -149,11 +149,11 @@ button {
     border-radius: 8px;
 }
 
-.playerConteiner > h3 {
+.playerContainer > h3 {
     margin: 8px 0 4px;
 }
 
-#winnerConteiner {
+#winnerContainer {
     width: 400px;
     height: 80px;
     background-color: rgb(48, 196, 55);
@@ -165,11 +165,11 @@ button {
     flex-wrap: wrap;
 }
 
-#winnerConteiner > h4 {
+#winnerContainer > h4 {
     margin: 8px 0 2px;
 }
 
-#winnerConteiner p {
+#winnerContainer p {
     margin: 0;
     font-size: 24px;
     color: white;
@@ -180,13 +180,13 @@ button {
     display: none;
 }
 
-#customRace-Conteiner {
+#customRace-Container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#customRace-Conteiner input {
+#customRace-Container input {
     margin-bottom: 20px;
     width: 100px;
     height: 30px;

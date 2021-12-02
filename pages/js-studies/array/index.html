@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Organizador de números</title>
+</head>
+<body>
+    <main>
+        <div class="mainContainer">
+            <h1>Organizador de números</h1>
+            <h3>Insira abaixo 4 números:</h3>
+            <div class="mainContainer-inputContainer">
+                <input type="number" id="number1">
+                <input type="number" id="number2">
+                <input type="number" id="number3">
+                <input type="number" id="number4">
+            </div>
+            <div class="mainContainer-buttonContainer">
+                <button id="sendButton">Enviar</button>
+            </div>
+        </div>
+        <div class="destinationContainer">
+            <h3>Números escolhidos: </h3>
+            <div class="destinationContainer-numbersContainer">
+                <input type="number" id="destinationNumber1" disabled value="1">
+                <input type="number" id="destinationNumber2" disabled value="124">
+                <input type="number" id="destinationNumber3" disabled value="1000">
+                <input type="number" id="destinationNumber4" disabled value="5">
+            </div>
+            <div class="destinationContainer-buttonContainer">
+                <button id="invertButton">Inverter ordem</button>
+                <button id="sortButton">Ordenar</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

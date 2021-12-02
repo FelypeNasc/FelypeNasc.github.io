@@ -10,9 +10,9 @@ function createElementInside(location, elementType, elementID, elementClass) {
 }
 
 function createResult() {
-    createElementInside("main", "div", "resultConteiner");
-    createElementInside("#resultConteiner", "h3", "resultH3");
-    createElementInside("#resultConteiner", "input", "resultOutput");
+    createElementInside("main", "div", "resultContainer");
+    createElementInside("#resultContainer", "h3", "resultH3");
+    createElementInside("#resultContainer", "input", "resultOutput");
     document.querySelector("#resultH3").innerHTML = "Resultado";
 }
 

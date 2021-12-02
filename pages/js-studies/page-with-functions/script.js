@@ -39,9 +39,9 @@ function fillMain () {
         //creating elements
         createElementInside("main", "section", "secondSection", "sectionImgLeft");
         createElementInside("#secondSection", "h3", "secondSection-h3");
-        createElementInside("#secondSection", "div", "secondSection-conteiner");
-        createElementInside("#secondSection-conteiner", "img", "secondSection-img");
-        createElementInside("#secondSection-conteiner", "p", "secondSection-p");
+        createElementInside("#secondSection", "div", "secondSection-container");
+        createElementInside("#secondSection-container", "img", "secondSection-img");
+        createElementInside("#secondSection-container", "p", "secondSection-p");
 
         //setting attributes
         document.querySelector("#secondSection-h3").innerHTML = "Gato-de-bengala"
@@ -54,9 +54,9 @@ function fillMain () {
         //creating elements
         createElementInside("main", "section", "thirdSection", "sectionImgRight");
         createElementInside("#thirdSection", "h3", "thirdSection-h3");
-        createElementInside("#thirdSection", "div", "thirdSection-conteiner");
-        createElementInside("#thirdSection-conteiner", "img", "thirdSection-img");
-        createElementInside("#thirdSection-conteiner", "p", "thirdSection-p");
+        createElementInside("#thirdSection", "div", "thirdSection-container");
+        createElementInside("#thirdSection-container", "img", "thirdSection-img");
+        createElementInside("#thirdSection-container", "p", "thirdSection-p");
 
         //setting attributes
         document.querySelector("#thirdSection-h3").innerHTML = "British Shorthair"
@@ -69,9 +69,9 @@ function fillMain () {
         //creating elements
         createElementInside("main", "section", "fourthSection", "sectionImgLeft");
         createElementInside("#fourthSection", "h3", "fourthSection-h3");
-        createElementInside("#fourthSection", "div", "fourthSection-conteiner");
-        createElementInside("#fourthSection-conteiner", "img", "fourthSection-img");
-        createElementInside("#fourthSection-conteiner", "p", "fourthSection-p");
+        createElementInside("#fourthSection", "div", "fourthSection-container");
+        createElementInside("#fourthSection-container", "img", "fourthSection-img");
+        createElementInside("#fourthSection-container", "p", "fourthSection-p");
 
         //setting attributes
         document.querySelector("#fourthSection-h3").innerHTML = "Maine Coon"
@@ -84,9 +84,9 @@ function fillMain () {
         //creating elements
         createElementInside("main", "section", "FifthSection", "sectionImgRight");
         createElementInside("#FifthSection", "h3", "FifthSection-h3");
-        createElementInside("#FifthSection", "div", "FifthSection-conteiner");
-        createElementInside("#FifthSection-conteiner", "img", "FifthSection-img");
-        createElementInside("#FifthSection-conteiner", "p", "FifthSection-p");
+        createElementInside("#FifthSection", "div", "FifthSection-container");
+        createElementInside("#FifthSection-container", "img", "FifthSection-img");
+        createElementInside("#FifthSection-container", "p", "FifthSection-p");
 
         //setting attributes
         document.querySelector("#FifthSection-h3").innerHTML = "Munchkin"
@@ -99,9 +99,9 @@ function fillMain () {
         //creating elements
         createElementInside("main", "section", "sixthSection", "sectionImgLeft");
         createElementInside("#sixthSection", "h3", "sixthSection-h3");
-        createElementInside("#sixthSection", "div", "sixthSection-conteiner");
-        createElementInside("#sixthSection-conteiner", "img", "sixthSection-img");
-        createElementInside("#sixthSection-conteiner", "p", "sixthSection-p");
+        createElementInside("#sixthSection", "div", "sixthSection-container");
+        createElementInside("#sixthSection-container", "img", "sixthSection-img");
+        createElementInside("#sixthSection-container", "p", "sixthSection-p");
 
         //setting attributes
         document.querySelector("#sixthSection-h3").innerHTML = "Ragdoll"

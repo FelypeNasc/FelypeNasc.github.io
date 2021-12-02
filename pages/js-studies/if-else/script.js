@@ -93,9 +93,9 @@ function sendForms() {
 
     orderCount += 1;
 
-    //criando o conteiner das ordens
-    function createOrderConteiner () {
-        createElementInside("#ordersConteiner", "div", "order"+orderCount);
+    //criando o container das ordens
+    function createOrderContainer () {
+        createElementInside("#ordersContainer", "div", "order"+orderCount);
         createElementInside("#order"+orderCount, "h4", "orderH4"+orderCount);
         document.querySelector("#orderH4"+orderCount).innerHTML = "Pedido nº"+orderCount;
 
@@ -128,6 +128,6 @@ function sendForms() {
         document.querySelector("#orderTotal"+orderCount).innerHTML = "Total: R$"+billTotal.toFixed(2);
 
     }
-    createOrderConteiner();
+    createOrderContainer();
 }
 
