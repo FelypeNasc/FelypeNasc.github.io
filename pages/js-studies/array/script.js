@@ -7,7 +7,7 @@ const number1 = document.getElementById('number1');
 const number2 = document.getElementById('number2');
 const number3 = document.getElementById('number3');
 const number4 = document.getElementById('number4');
-destinationNumbers[0] = document.getElementById('destinationNumber1');
+parseInt(destinationNumbers[0] = document.getElementById('destinationNumber1'));
 destinationNumbers[1] = document.getElementById('destinationNumber2');
 destinationNumbers[2] = document.getElementById('destinationNumber3');
 destinationNumbers[3] = document.getElementById('destinationNumber4');
@@ -31,39 +31,29 @@ function pushToDestiny() {
 // button functions
 
 function getNumbers () {
-    inputtedNumbers = [number1.value, number2.value, number3.value, number4.value];
+    inputtedNumbers = [parseInt(number1.value), parseInt(number2.value), parseInt(number3.value), parseInt(number4.value)];
     pushToDestiny();
 }
 
 function invertOrder(numbers) {
     let inverted = [];
     for (let i = 0; i < numbers.length; i++) {
-        inverted[numbers.length - i] = numbers[i];
+        inverted[numbers.length - i -1] = numbers[i];
     }
     for (let i = 0; i < inverted.length; i++) {
-        destinationNumbers[i] = inverted[i];
+        inputtedNumbers[i] = inverted[i];
     }
+    pushToDestiny();
 }
 
 function sortNumbers (numbers) {
-    let sorted = [];
-    for (let i = 0; numbers.length != sorted.length; i++) {
-        if (i == 0) {
-            sorted.push(numbers[i])
-        } else {
-            for (let a = 0; a < sorted.length; a++) {
-                if (numbers[i] > sorted[sorted.length - 1]) {
-                    sorted.push(numbers[i])
-                    break
-                } else if (numbers[i] <= sorted[a]) {
-                    sorted.splice(a, 0, numbers[i])
-                    break
-                }
+    for (let i = 0; i < numbers.length; i++) {
+        for (let x = 0; x < numbers.length-1; x++) {
+            if (numbers[x] > numbers[x + 1]) {
+                [numbers[x], numbers[x+1]] = [numbers[x+1], numbers[x]];
             }
         }
     }
-    for (let i = 0; i < sorted.length; i++) {
-        inputtedNumbers[i] = sorted[i];
-    }
-    pushToDestiny()
+    pushToDestiny();
+    console.log(numbers)
 }
