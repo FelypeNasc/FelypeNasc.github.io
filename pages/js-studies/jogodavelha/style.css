@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #202020;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    background-color: #202020;
+    width: 100vw; 
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gameContainer {
+    margin-bottom: 160px;
+}
+
+#playerTurnImg {
+    height: 100px;
+    margin: 0 auto 60px;
+    background-size: contain;
+}
+
+#playerTurnImg img {
+    width: 100px;
+    height: 100px;
+}
+
+#tictacBoardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 308px;
+    margin: 0 auto 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cell:hover {
+    background-color: #626f88;
+}
+
+#a1, #a2, #a3 {
+    border-top: 0;
+}
+
+#a1, #b1, #c1 {
+    border-left: 0;
+}
+
+#a3, #b3, #c3 {
+    border-right: 0;
+}
+
+#c1, #c2, #c3 {
+    border-bottom: 0;
+}
+
+#a1 {
+    border-radius: 8px 0 0;
+}
+
+#a3 {
+    border-radius: 0 8px 0 0;
+}
+
+#c1 {
+    border-radius: 0 0 0 8px;
+}
+
+#c3 {
+    border-radius: 0 0 8px;
+}
+
+
+.cell img {
+    width: 80%;
+    height: 80%;
+}
+
+.checkedX, .checkedO {
+    pointer-events: none;
+}
+
+.checkedO {
+    background-image: url(assets/o.svg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.checkedX {
+    background-image: url(assets/x.svg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.checked:hover {
+    background-color: #202020;
+}
+
+.resultContainer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.results {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 500px;
+}
+
+.results button {
+    border: 0;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #28ad45;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.results button:hover {
+    background-color: #41d461;
+}
+
+.hide {
+    display: none;
+}
+
+#resultDisplay {
+    width: 300px;
+    height: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    background-size: contain;
+}
