@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Simulador de corrida</title>
+</head>
+
+<body>
+    <header id="headerLink">
+        <h1>Simulador de corrida</h1>
+    </header>
+    <main>
+        <p id="warningLine">Para voltar ao início, clique no título</p>
+        <div id="mainScreen">
+            <h3>Escolha abaixo o tipo de corrida:</h3>
+            <div class="mainScreen-optionContainer">
+                <button id="mainScreen-optionContainer-op1">Corrida rápida</button>
+                <button id="mainScreen-optionContainer-op2">Grande Prêmio</button>
+                <button id="mainScreen-optionContainer-op3">Enduro</button>
+                <button id="mainScreen-optionContainer-op4">Personalizado</button>
+            </div>
+        </div>
+        <div id="customRace">
+            <div id="customRace-Container">
+                <h3>Número de voltas:</h3>
+                <input type="number" id="customRace-laps">
+                <button id="customRace-sendButton">Enviar</button>
+                <p id="warningInsertMessage">O campo precisa de um valor acima de 0!</p>
+            </div>
+        </div>
+        <div id="raceScreen">
+            <h2 id="raceName"></h2>
+            <button id="sendButton">Começar</button>
+            <div class="playersContainer">
+                <div id="pedroContainer" class="playerContainer">
+                    <h3>Pedro</h3>
+                    <p id="pedro"></p>
+                    <p id="pedroCarModel"></p>
+                </div>
+                <div id="jucaContainer" class="playerContainer">
+                    <h3>Juca</h3>
+                    <p id="juca"></p>
+                    <p id="jucaCarModel"></p>
+                </div>
+                <div id="ednaContainer" class="playerContainer">
+                    <h3>Edna</h3>
+                    <p id="edna"></p>
+                    <p id="ednaCarModel"></p>
+                </div>
+            </div>
+            <div id="winnerContainer">
+                <h4>O vencedor foi:</h4>
+                <p id="winner"></p>
+            </div>
+        </div>
+    </main>
+</body>
+<script defer src="script.js"></script>
+
+</html>
