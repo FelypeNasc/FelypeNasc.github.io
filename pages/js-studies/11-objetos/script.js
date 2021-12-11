@@ -179,7 +179,7 @@ function playRace() {
     } else if (jucaWins > ednaWins) {
         winnerContainer.innerHTML = "JUCA!";
         jucaContainer.classList.add('winner')
-    } else {
+    } else if (ednaWins > jucaWins){
         winnerContainer.innerHTML = "EDNA!";
         ednaContainer.classList.add('winner')
     }
