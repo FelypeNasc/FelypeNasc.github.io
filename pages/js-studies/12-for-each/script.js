@@ -14,13 +14,13 @@ headerLink.addEventListener('click', changeToMainScreen);
 // race screen variables
 const raceScreen = document.getElementById('raceScreen');
 const raceName = document.getElementById('raceName');
-const pedroConteiner = document.getElementById('pedroConteiner')
+const pedroConteiner = document.getElementById('pedroConteiner');
 const pedroWinsOutput = document.getElementById('pedro');
 const pedroCarModel = document.getElementById('pedroCarModel');
-const jucaConteiner = document.getElementById('jucaConteiner')
+const jucaConteiner = document.getElementById('jucaConteiner');
 const jucaWinsOutput = document.getElementById('juca');
 const jucaCarModel = document.getElementById('jucaCarModel');
-const ednaConteiner = document.getElementById('ednaConteiner')
+const ednaConteiner = document.getElementById('ednaConteiner');
 const ednaWinsOutput = document.getElementById('edna');
 const ednaCarModel = document.getElementById('ednaCarModel');
 const winnerContainer = document.getElementById('winner');
@@ -54,56 +54,32 @@ const carSpecs = {
         maxVel: {min: 210, max: 230},
         drift: {min: 1, max: 1.75}
     },
-}
+};
 
-// Rápida (10 voltas) 
-
-// Primeiro Lugar: 200 pontos;
-// Segundo Lugar: 120 pontos;
-// Terceiro Lugar: 50 pontos;
-// Grand Prix (70 voltas) 
-
-// Primeiro Lugar: 220 pontos;
-// Segundo Lugar: 130 pontos;
-// Terceiro Lugar: 75 pontos;
-// Enduro (160 voltas) 
-
-// Primeiro Lugar: 250 pontos;
-// Segundo Lugar: 150 pontos;
-// Terceiro Lugar: 90 pontos;
-
-const raceExp = {
-    fast: {
-        firstPlace = 200,
-        secondPlace = 120,
-        thirdPlace = 50
-    },
-    grandPrix: {
-        firstPlace = 220,
-        secondPlace = 130,
-        thirdPlace = 75
-    },
-    enduro: {
-        firstPlace = 250,
-        secondPlace = 150,
-        thirdPlace = 90
-    }
-}
+const raceSpecs = [
+    {numberOfLaps: 10, firstPlace: 200, secondPlace: 120, thirdPlace: 50},
+    {numberOfLaps: 70, firstPlace: 220, secondPlace: 130, thirdPlace: 75},
+    {numberOfLaps: 160, firstPlace: 250, secondPlace: 150, thirdPlace: 90}
+];
 
 let numberOfLaps = '';
-let players = []
+let playersInfo = [
+    {name: pedro, lvl: 0, exp: 0},
+    {name: juca, lvl: 0, exp: 0},
+    {name: edna, lvl: 0, exp: 0}
+];
 
 // base functions
 function getRandom(min, max) {
     return Math.random() * (max - min + 1) + min;
-}
+};
 
 function randomizeCarType() {
     x = Math.random() * 100;
     if (x <= 60) return 'popular';
     if (x <= 95) return 'sport';
     if (x <= 100) return 'superSport';
-}
+};
 
 function generateNewCar() {
     carType = carSpecs[randomizeCarType()];
@@ -113,7 +89,7 @@ function generateNewCar() {
     newCar.maxVel = getRandom(carType.maxVel.min, carType.maxVel.max);
     newCar.drift = getRandom(carType.drift.min, carType.drift.max);
     return newCar;
-}
+};
 
 // change screen functions
 
@@ -129,11 +105,10 @@ function changeToMainScreen () {
     pedroCarModel.classList.remove('popular', 'sport', 'superSport');
     jucaCarModel.classList.remove('popular', 'sport', 'superSport');
     ednaCarModel.classList.remove('popular', 'sport', 'superSport');
-}
+};
 
 function changeToRaceScreen (option) {
-    const raceTypes = Array(10, 70, 160);
-    numberOfLaps = raceTypes[option];
+    numberOfLaps = raceSpecs[option].numberOfLaps;
     if (option == 0) {
         raceName.innerHTML = 'Corrida rápida (10 voltas)';
         mainScreen.style.display = "none";
@@ -146,11 +121,11 @@ function changeToRaceScreen (option) {
         raceName.innerHTML = 'Enduro (160 voltas)';
         mainScreen.style.display = "none";
         raceScreen.style.display = "flex";
-    } else {
+    } else if (option == 3){
         mainScreen.style.display = "none";
         customRaceScreen.style.display = "block";
-    }
-}
+    };
+};
 
 function customRaceCheckingLaps () {
     if ((customRaceLaps.value).length > 0 && customRaceLaps.value > 0) {
@@ -160,8 +135,17 @@ function customRaceCheckingLaps () {
         raceScreen.style.display = "flex";
     } else {
         warningInsertMessage.style.display = "block";
-    }
-}
+    };
+};
+
+function expCheck () {
+    playersInfo.forEach( (player) => {
+        if (player.exp >= 450 && player.lvl < 10) {
+            player.lvl += 1;
+            player.exp = player.exp % 450;
+        }
+    });
+};
 
 // play race function
 
@@ -185,8 +169,8 @@ function playRace() {
             jucaWins += 1;
         } else {
             ednaWins += 1;
-        }
-    }   
+        };
+    };
 
     // outputing to html the race info
     pedroWinsOutput.innerHTML = pedroWins+' Vitórias';
@@ -217,5 +201,5 @@ function playRace() {
     } else if (ednaWins > jucaWins){
         winnerContainer.innerHTML = "EDNA!";
         ednaContainer.classList.add('winner')
-    }
-}
+    };
+};
