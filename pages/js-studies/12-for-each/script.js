@@ -34,7 +34,7 @@ const customRaceSendbutton = document.getElementById('customRace-sendButton');
 const warningInsertMessage = document.getElementById('warningInsertMessage');
 customRaceSendbutton.addEventListener('click', customRaceCheckingLaps);
 
-
+// script variables
 const carSpecs = {
     popular: {
         category: 'popular',
@@ -56,7 +56,42 @@ const carSpecs = {
     },
 }
 
+// Rápida (10 voltas) 
+
+// Primeiro Lugar: 200 pontos;
+// Segundo Lugar: 120 pontos;
+// Terceiro Lugar: 50 pontos;
+// Grand Prix (70 voltas) 
+
+// Primeiro Lugar: 220 pontos;
+// Segundo Lugar: 130 pontos;
+// Terceiro Lugar: 75 pontos;
+// Enduro (160 voltas) 
+
+// Primeiro Lugar: 250 pontos;
+// Segundo Lugar: 150 pontos;
+// Terceiro Lugar: 90 pontos;
+
+const raceExp = {
+    fast: {
+        firstPlace = 200,
+        secondPlace = 120,
+        thirdPlace = 50
+    },
+    grandPrix: {
+        firstPlace = 220,
+        secondPlace = 130,
+        thirdPlace = 75
+    },
+    enduro: {
+        firstPlace = 250,
+        secondPlace = 150,
+        thirdPlace = 90
+    }
+}
+
 let numberOfLaps = '';
+let players = []
 
 // base functions
 function getRandom(min, max) {
