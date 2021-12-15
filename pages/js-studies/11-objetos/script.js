@@ -34,7 +34,6 @@ const customRaceSendbutton = document.getElementById('customRace-sendButton');
 const warningInsertMessage = document.getElementById('warningInsertMessage');
 customRaceSendbutton.addEventListener('click', customRaceCheckingLaps);
 
-
 const carSpecs = {
     popular: {
         category: 'popular',
