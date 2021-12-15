@@ -1,10 +1,12 @@
 body {
     background-color: #252525;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 main {
-    width: 80%;
+    width: 70%;
+    min-width: 720px;
     min-height: 700px;
     background-color: white;
     margin: 0 auto;
@@ -14,8 +16,18 @@ main {
     border-radius: 0 0 10px 10px;
 }
 
+input {
+    min-width: 120px;
+    min-height: 20px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid rgb(200, 200, 200);
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
 table, tr, td, th {
-    border: 1px solid black;
+    border: 1px solid rgb(200, 200, 200);
     border-collapse: collapse;
     padding: 8px;
     min-width: 80px;
@@ -24,4 +36,26 @@ table, tr, td, th {
 
 th {
     font-size: 20px;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonsContainer button {
+    min-width: 120px;
+    min-height: 30px;
+    border-radius: 8px;
+    border: 0;
+    background-color: cornflowerblue;
+    color: white;
+    margin: 10px ;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.buttonsContainer button:hover {
+    background-color: rgb(159, 189, 243);
 }
