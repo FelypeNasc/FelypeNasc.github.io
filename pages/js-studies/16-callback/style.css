@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    background-color: #304080;
+
+}
+
+main {
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 10px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#startSort {
+    width: 80px;
+    height: 34px;
+    border-radius: 8px;
+    border: 0;
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+#startSort:hover {
+    background-color: rgb(154, 186, 245);
+}
+
+.numbersContainer {
+    padding: 40px;
+    text-align: left;
+}
