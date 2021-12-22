@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-color: #304080;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -14,7 +14,7 @@ main {
     align-items: center;
 }
 
-#startSort {
+#startDraw {
     width: 80px;
     height: 34px;
     border-radius: 8px;
@@ -25,7 +25,7 @@ main {
     transition: 0.1s;
 }
 
-#startSort:hover {
+#startDraw:hover {
     background-color: rgb(154, 186, 245);
 }
 
