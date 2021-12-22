@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #304080;
+    background-color: #165f20;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -9,6 +9,7 @@ main {
     background-color: white;
     border-radius: 10px;
     width: 700px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,17 +20,36 @@ main {
     height: 34px;
     border-radius: 8px;
     border: 0;
-    background-color: cornflowerblue;
+    background-color: rgb(59, 197, 59);
     color: white;
     cursor: pointer;
     transition: 0.1s;
 }
 
 #startDraw:hover {
-    background-color: rgb(154, 186, 245);
+    background-color: rgb(100, 237, 100);
 }
 
-.numbersContainer {
-    padding: 40px;
-    text-align: left;
+.numbersDrawn {
+    text-align: center;
+}
+
+#numbersContainer {
+    width: 480px;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: left;
+}
+
+.numbers {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:10px;
+    border-radius:100%;
+    background-color: rgb(59, 197, 59);
 }
