@@ -73,6 +73,7 @@ function calcTax() {
 
 function sortByName() {
     entriesDatabase.sort((a, b) => a.name.localeCompare(b.name));
+    
     calcTax()
 }
 
