@@ -8,8 +8,8 @@ console.log(multiplyFour(...nums))
 
 // function multiplyFour(...n) {
 //     result = n[0]
-//     n.forEach((element) => {
-//         result = result * element
+//     n.forEach((el) => {
+//         result = result * el
 //     });
 //     return result
 // }
