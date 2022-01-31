@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+}
+button {
+    border: 0;
+    font-size: 20px;
+    border: 1px solid rgb(214, 214, 214);
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#calculator {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+}
+
+#result-container {
+    height: 80px;
+    width: 340px;
+    padding-right: 40px;
+    font-size: 40px;
+    display: flex;
+    align-items:center;
+    justify-content:end;
+    background-color: rgb(73, 73, 73);
+    color: white;
+    border-radius: 4px 4px 0 0;
+}
+
+#buttons {
+    display: flex;
+}
+
+
+.number-buttons {
+    display: flex;
+    width: 280px;
+    height: 200px;
+    flex-wrap: wrap;
+}
+
+.number-buttons div {
+    background-color: gainsboro;
+}
+
+.number-buttons button {
+    width: calc(100% / 3);
+    height: 50px;
+}
+
+.number-buttons button:nth-child(10) {
+    width: calc(100% / 3 * 2);
+}
+
+.operations-buttons {
+    width: 50px;
+    height: 200px;
+}
+
+.operations-buttons button {
+    width: 100%;
+    height: 50px;
+}
+
+#result-button-container {
+    width: 50px;
+}
+
+#result-button-container button{
+    width: 100%;
+    height: 100px;
+}
