@@ -1,49 +1,44 @@
-//html variables
-const numberButtonsContainer = document.querySelector(".number-buttons");
-const operationsButtonsContainer = document.querySelector('.operations-buttons');
-const screen = document.getElementById('result');
+$(document).ready(function(){
+    // listeners
+    $("#clear-calculator").on("click", () => clearCalculator());
+    $("#get-result").on("click", () => getResult());  
+}); 
 
-const clearButton = document.getElementById('clear-calculator');
-const getResultButton = document.getElementById('get-result');
 
-// listeners
-clearButton.addEventListener('click', () => clearCalculator());
-getResultButton.addEventListener('click', () => getResult());
-
-numberButtonsContainer.addEventListener("click", (ev) => {
-    if (!calculator.operand1 == null, !calculator.operand2 == null) return;
-    if (screen.innerHTML == '' || screen.innerHTML == '0') {
-        screen.innerHTML = parseInt(ev.target.value);
+$(".number-buttons").on("click", (ev) => {
+    if ((!calculator.operand1 == null, !calculator.operand2 == null)) return;
+    if ($("#result").html() == "" || $("#result").html() == "0") {
+        $("#result").html(parseInt(ev.target.value));
     } else {
-        screen.innerHTML += parseInt(ev.target.value);
+        $("#result").append(parseInt(ev.target.value));
     }
 });
-operationsButtonsContainer.addEventListener('click', (ev) => {
-    setValues()
+$(".operations-buttons").on("click", (ev) => {
+    setValues();
     calculator.operator = ev.target.value;
-    screen.innerHTML += ` ${ev.target.value} `;
-})
+    $("#result").append(` ${ev.target.value} `);
+});
 
-// functions 
+// functions
 
 function setValues() {
     if (calculator.operand1 == null) {
-        calculator.operand1 = screen.innerHTML;
+        calculator.operand1 = parseInt($("#result").html());
     } else if (calculator.n2 == null) {
-        calculator.operand2 = screen.innerHTML.split(' ')[2];
+        calculator.operand2 = parseInt($("#result").html().split(" ")[2]);
     }
     console.log(calculator.operand1, calculator.operator, calculator.operand2);
 }
 
 function getResult() {
-    setValues()
-    screen.innerHTML = calculator.getResult();
+    setValues();
+    $("#result").html(calculator.getResult());
     calculator.clearCalculator();
     console.log(calculator.getResult());
 }
 
 function clearCalculator() {
-    screen.innerHTML = '0';
+    $("#result").html("0");
     calculator.clearCalculator;
     console.log(calculator.operand1, calculator.operator, calculator.operand2);
 }
