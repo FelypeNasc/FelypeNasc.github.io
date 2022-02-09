@@ -13,13 +13,13 @@
         <h1>Cotação Hoje</h1>
     </header>
     <main>
-        <select name="currency-from" id="currency-select-from"></select>
         <div id="result">
             <span id="code"></span>
             <span>vale</span>
             <span id="codein"></span>
             <span>hoje</span>
         </div>
+        <select name="currency-from" id="currency-select-from"></select>
         <div id="search-by-date-container">
             <div>
                 <span>Data Inicial</span>
@@ -30,9 +30,11 @@
                 <input type="date" id="date-final">
             </div>
         </div>
-        <button id="send-button">Buscar</button>
-        <!-- <div id="table-container">
-            <table>
+        <div>
+            <button id="send-button">Buscar</button>
+        </div>
+        <div id="table-container">
+            <table id="res-table">
                 <thead>
                     <tr>
                         <th>Moeda</th>
@@ -45,7 +47,7 @@
                 </thead>
                 <tbody id="tbody"></tbody>
             </table>
-        </div> -->
+        </div>
     </main>
     
     <script src="script.js"></script>
