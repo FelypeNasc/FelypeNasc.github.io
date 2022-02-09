@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    background-color: #22577E;
+    color: #F5F5F5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main, header {
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+header {
+    margin: 30px auto;
+}
+
+header h1{
+    margin: 0;
+}
+
+select, button {
+    border: 0;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+select:hover {
+    background-color: #b4d7f5;
+    
+}
+
+#sendButton {
+    padding: 1px 8px;
+    color: white;
+    background-color: #5584AC;
+    cursor: pointer;
+}
+
+#sendButton:hover {
+    background-color: #70a1cc;
+}
+
+#code, #codein {
+    font-size: 30px;
+    color:#36ca62;
+}

@@ -5,14 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <title>Conversor de moedas</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Cotação Hoje</title>
 </head>
 <body>
-    <select name="currency" id="currencySelect">
-    </select>
-    <button id="sendButton">Verificar</button>
-    <div id="result">
-    </div>
+    <header>
+        <h1>Cotação Hoje</h1>
+    </header>
+    <main>
+        <select name="currency-from" id="currency-select-from"></select>
+        <select name="currency-to" id="currency-select-to"></select>
+        <button id="send-button">Verificar</button>
+        <div id="result">
+            <span id="code"></span>
+            <span>vale</span>
+            <span id="codein"></span>
+            <span>hoje</span>
+        </div>
+        <div id="table-container">
+
+        </div>    
+    </main>
+    
     <script src="script.js"></script>
 </body>
 </html>
