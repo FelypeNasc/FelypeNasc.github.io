@@ -1,11 +1,11 @@
-const apiURL = "https://economia.awesomeapi.com.br/json/"
+const apiURL = "https://economia.awesomeapi.com.br/json/" // link da api https://docs.awesomeapi.com.br/api-de-moedas
 
 $(document).ready(() => {
     $.ajax({url:`${apiURL}all`})
         .done((data) => {
             Object.entries(data).forEach((currency) => {
                 $('#currency-select-from').append(`<option>${currency[0]}</option>`);
-            })
+            }) // adiciona ao select as moedas disponíveis na API
             $('#currency-select-from').val("USD");
             $.ajax({ url: `${apiURL}USD` })
                 .done((data) => {
@@ -35,7 +35,7 @@ $("#send-button").on('click', () => {
     const finalDate = new Date($('#date-final').val());
     let currDate = initialDate
 
-    function addToTable(data) {
+    function addToTable(data) { // adicionar dados a tabela
         const currency = JSON.stringify(data[0].code).split('/')[0].replace(/"/g, '');
         const dayValue = JSON.stringify(data[0].bid).replace(/"/g, '');
         const minVal = JSON.stringify(data[0].low).replace(/"/g, '');
@@ -54,12 +54,12 @@ $("#send-button").on('click', () => {
         `)
     }
         
-    while(currDate <= finalDate){
+    while(currDate <= finalDate){ // a API não tem um método para passar o valor final de cada dia, com isso optei por fazer uma requisição pra cada dia mesmo sabendo da possibilidade de overload da API
         const initialDateParse = currDate.toISOString().split('T')[0].replaceAll('-','');       
         $.ajax({url: `${apiURL}${selectedCurrency}?start_date=${initialDateParse}&end_date=${initialDateParse}`})
         .done((data) => {
             addToTable(data) 
         });
-        currDate.setDate(currDate.getDate() + 1)
+        currDate.setDate(currDate.getDate() + 1) // adiciona mais 1 dia
     }   
 })
