@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Consulta de CEP</title>
+</head>
+<body>
+    <main>
+        <div id="zip-input-container">
+            <p>Digite seu CEP abaixo: </p>
+            <input type="number" name="zipinput" id="zipcode-input">
+            <button id="search-button">Buscar</button>
+        </div>
+        <div id="res-container">
+            <div id="res-address"></div>
+            <div id="res-zipcode"></div>
+            <div id="res-district"></div>
+            <div id="res-city"></div>
+            <div id="res-state"></div>
+            <div id="res-ddd"></div>
+            <div id="res-ibge"></div>
+            <div id="res-lat"></div>
+            <div id="res-lng"></div>
+        </div>
+        <div id="iframe-container">
+            <iframe src="" frameborder="0" id="iframe"></iframe>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
