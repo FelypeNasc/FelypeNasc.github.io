@@ -11,10 +11,8 @@ async function main(filteredPokemons) {
 
 searchInput.addEventListener('input', function () {
   const value = searchInput.value
-  console.log(value)
   const localStoragePokemons = JSON.parse(localStorage.getItem('pokemons'))
   const filteredPokemons = searchPokemons(value, localStoragePokemons);
-  console.log(filteredPokemons)
   main(filteredPokemons)
 
 });
@@ -33,9 +31,6 @@ async function fetchAndStorePokemons() {
     }
     const pokemonFilteredData = pokemons.map((poke) => formatPokeObj(poke))
     localStorage.setItem('pokemons', JSON.stringify(pokemonFilteredData));
-    console.log('Pokemons armazenados no localStorage.');
-  } else {
-    console.log('Pokemons já estão armazenados no localStorage.');
   }
   return JSON.parse(localStorage.getItem('pokemons'));
 }
