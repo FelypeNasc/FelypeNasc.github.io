@@ -1,3 +1,11 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -13,7 +21,8 @@ header {
 }
 
 #header-logo {
-  width: 30%;
+  width: 50%;
+  max-width: 500px;
 }
 
 body {
@@ -32,17 +41,17 @@ main {
   align-items: center;
 }
 
-#filter-section {
+#search-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 70%;
   border-radius: 12px;
-  margin: 40px 0 ;
+  margin: 20px 0;
 }
 
-#filter-section h2 {
+#search-section h2 {
   color: white;
   margin: 12px 0 ;
 }
@@ -54,11 +63,67 @@ main {
   border: none;
 }
 
+#filters-container {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.multiselect {
+  width: 200px;
+}
+.selectBox {
+  position: relative;
+  background-color: white;
+  color: rgb(141, 141, 141);
+  font-weight: 400;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+}
+
+
+#select-icon {
+  transition: 0.1s;
+}
+
+#poke-type-checkboxes {
+  width: 200px;
+  background-color: white;
+  color: #141414;
+  display: none;
+  z-index: 5;
+  position: absolute;
+  font-weight: 400;
+}
+
+#poke-type-checkboxes label {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 10px;
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+}
+
+#poke-type-checkboxes label:hover {
+  background-color: #1e90ff;
+}
+
 #poke-section {
   display: flex;
   justify-content: center;
   margin-bottom: 300px;
   width: 100%;
+  min-height: 80vh;
 }
 
 #poke-cards-container {
@@ -89,7 +154,7 @@ main {
 .card-header {
   width: 100%;
   display: flex;
-  background-color: #222222;
+  background-color: #141414;
   border-radius: 12px 12px 0 0;
   /* justify-content: space-between; */
 }
