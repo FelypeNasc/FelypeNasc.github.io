@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root {
+    /*Color Palette */
+    --darkblue: #003B73;
+    --bgblue: #0074B7;
+    --mediumblue: #60A3D9;
+    --highlightblue: #BFD7ED;
+}
+
+body {
+    background: linear-gradient(-45deg, #030030, #031750, #60A3D9);
+    background-size: 500% 500%;
+    animation: gradient 15s ease infinite;
+    height: 600vh;
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(-45deg, #60A3D9, #031750, #030030);
+    animation: gradient2 15s ease infinite;
+    background-size: 600% 600%;
+    border-radius: 10px;
+    font: bold 2.5em "Roboto", sans-serif;
+    color: var(--highlightblue);
+    text-shadow: 1px 1px 3px var(--bgblue);
+    width: 500px;
+    text-align: center;
+    margin: 60px auto 20px auto;
+    box-shadow: 0px 0px 10px var(--bgblue);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+nav {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    margin-top: 30px;
+}
+nav a {
+    padding: 0 30px;
+}
+nav button {
+    width: 120px;
+    font-size: 24px;
+    padding: 4px;
+    border: var(--darkblue);
+    border-width: 1px;
+    border-radius: 4px;
+    background: aliceblue;
+    color: var(--darkblue);
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: var(--mediumblue) ;
+    color: aliceblue;
+}
+
+main {
+    height: 11%;
+    width: 600px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: auto;
+    background: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.486);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--darkblue);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bgblue);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--mediumblue);
+}
+
+h1 {
+    background: linear-gradient(-45deg, #60A3D9, #031750, #030030);
+    animation: gradient2 15s ease infinite;
+    background-size: 600% 600%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
+    color: aliceblue;
+}
+
+@keyframes gradient2 {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.topics-box {
+    width: 400px;
+    margin: auto;
+}
+
+.topic-title {
+    border-radius: 5px;
+    width: 320px;
+    background-color: var(--mediumblue);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin: auto;
+}
+
+.topics {
+    margin: auto;
+}
+
+.topic-items {
+    text-align: center;
+    font-size: 20px;
+    margin: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--darkblue);
+}
+
+a:link {
+    color: var(--darkblue);
+}
+
+a:visited {
+    color: var(--darkblue);
+}
+
+a:hover {
+    color: skyblue;
+}
+
+a:active {
+    color: blue;
+}
+
+footer {
+    text-align: center;
+    padding: 14px;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+}
