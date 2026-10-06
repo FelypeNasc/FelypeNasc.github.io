@@ -54,7 +54,7 @@
       'projects.dnd.title':   'DnD 5e Character Creator',
       'projects.dnd.desc':    'Criador visual de personagens para D&D 5e — escolha raça, classe, atributos e gere sua ficha interativamente.',
       'projects.jobfit.title':      'Job Fit Check',
-      'projects.jobfit.desc':       'Webscraping de vagas LinkedIn + análise do currículo com IA para gerar nota de compatibilidade com a vaga.',
+      'projects.jobfit.desc':       'Plataforma full-stack para análise de fit com vagas. Scraping com Playwright, fila de processamento com BullMQ e score de compatibilidade via LLM local.',
       'projects.notebookrag.title': 'NotebookRAG',
       'projects.notebookrag.desc':  'App de chat com documentos via RAG. Upload de PDFs, Markdown, Word e texto — converse com seus docs usando LLM local, sem cloud, sem API keys, 100% privado.',
 
@@ -76,7 +76,7 @@
       'nav.contato':      'Contact',
 
       'hero.greeting': "Hi, I'm",
-      'hero.subtitle': 'Backend-focused \u00b7 100% remote',
+      'hero.subtitle': 'Backend-focused \u00b7',
       'hero.cta1':     'View Projects',
       'hero.cta2':     'Get in Touch',
 
@@ -116,7 +116,7 @@
       'projects.dnd.title':   'DnD 5e Character Creator',
       'projects.dnd.desc':    'Visual character creator for D&D 5e — choose race, class, attributes and generate your character sheet interactively.',
       'projects.jobfit.title':      'Job Fit Check',
-      'projects.jobfit.desc':       'LinkedIn job scraper + AI-powered resume analysis to generate a compatibility score for the position.',
+      'projects.jobfit.desc':       'Full-stack job-fit analysis platform. Scrapes listings with Playwright, processes resumes through a BullMQ queue, and scores compatibility using a local LLM.',
       'projects.notebookrag.title': 'NotebookRAG',
       'projects.notebookrag.desc':  'RAG-powered document chat app. Upload PDFs, Markdown, Word docs, and plain text to chat with your documents using a local LLM — no cloud, no API keys, fully private.',
 
