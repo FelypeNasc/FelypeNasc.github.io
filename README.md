@@ -1,6 +1,4 @@
-# FelypeNasc.github.io
-
-Portfolio pessoal de **Felype Nascimento** — Fullstack Software Engineer com foco em backend.
+Fullstack Software Engineer com foco em backend.
 
 ## Sobre
 
