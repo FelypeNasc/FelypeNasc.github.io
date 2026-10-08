@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Manutenção de computadores para moradores do condomínio — diagnóstico, limpeza, formatação, backup, instalação de SSD e mais."
+    />
+    <title>Manutenção de Computadores — Felype Nascimento</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* ── Page hero ── */
+      .page-hero {
+        padding: 10rem 0 5rem;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      .page-hero-icon {
+        font-size: 4.5rem;
+        line-height: 1;
+        margin-bottom: 1.25rem;
+        display: block;
+      }
+
+      .page-hero-title {
+        font-size: clamp(2rem, 5vw, 3.25rem);
+        font-weight: 800;
+        color: var(--text);
+        letter-spacing: -0.03em;
+        margin-bottom: 1rem;
+      }
+
+      .page-hero-subtitle {
+        font-size: 1.05rem;
+        color: var(--text-muted);
+        max-width: 540px;
+        margin: 0 auto 2rem;
+        line-height: 1.7;
+      }
+
+      /* ── Service cards ── */
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .service-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 1.75rem;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+      }
+
+      .service-card:hover {
+        border-color: var(--border-hover);
+        box-shadow: 0 0 32px var(--primary-glow), var(--shadow-card);
+        transform: translateY(-4px);
+      }
+
+      .service-icon {
+        font-size: 2.25rem;
+        line-height: 1;
+        margin-bottom: 1rem;
+        display: block;
+      }
+
+      .service-card h3 {
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--text);
+        margin-bottom: 0.5rem;
+      }
+
+      .service-card p {
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+
+      /* ── Pricing note ── */
+      .pricing-note {
+        margin-top: 1.5rem;
+        font-size: 0.875rem;
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+
+      @media (max-width: 600px) {
+        .services-grid { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+    <!-- NAVBAR -->
+    <header id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav-logo">Felype<span class="accent">.</span></a>
+
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="index.html">← Portfolio</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#precos">Preços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+
+        <div class="nav-controls">
+          <button class="btn-icon" id="theme-toggle" aria-label="Alternar tema">
+            <span id="theme-icon">&#9728;</span>
+          </button>
+          <button
+            class="btn-icon hamburger"
+            id="hamburger"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- =================== HERO =================== -->
+      <section class="page-hero">
+        <div class="container">
+          <span class="page-hero-icon reveal" aria-hidden="true">&#128187;</span>
+          <h1 class="page-hero-title reveal">
+            Manutenção de <span class="accent">Computadores</span>
+          </h1>
+          <p class="page-hero-subtitle reveal">
+            Serviço especializado para moradores do condomínio.
+            Atendimento rápido, preço justo e sem precisar sair de casa.
+          </p>
+          <div class="hero-cta reveal" style="justify-content: center;">
+            <a href="#precos" class="btn btn-primary">Ver Tabela de Preços</a>
+            <a href="#contato" class="btn btn-outline">Solicitar Atendimento</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================== SERVICOS =================== -->
+      <section id="servicos" class="section section-alt">
+        <div class="container">
+          <h2 class="section-title reveal">Serviços</h2>
+
+          <div class="services-grid">
+            <!-- Diagnóstico -->
+            <div class="service-card reveal">
+              <span class="service-icon" aria-hidden="true">&#128269;</span>
+              <h3>Diagnóstico</h3>
+              <p>
+                Análise completa do computador com retorno em até 24h.
+                Identifica lentidão, travamentos, telas azuis e qualquer
+                falha de hardware ou software. <strong style="color: var(--primary)">Grátis.</strong>
+              </p>
+            </div>
+
+            <!-- Limpeza -->
+            <div class="service-card reveal">
+              <span class="service-icon" aria-hidden="true">&#129529;</span>
+              <h3>Limpeza e Higienização</h3>
+              <p>
+                Desmontagem, remoção de poeira, limpeza dos coolers,
+                cable management e renovação de pasta térmica.
+                Disponível para desktop e notebook.
+              </p>
+            </div>
+
+            <!-- Formatação -->
+            <div class="service-card reveal">
+              <span class="service-icon" aria-hidden="true">&#128190;</span>
+              <h3>Formatação e Sistema</h3>
+              <p>
+                Reinstalação do Windows, drivers, programas essenciais
+                e antivírus. Pacotes com backup de dados e otimização
+                de desempenho disponíveis.
+              </p>
+            </div>
+
+            <!-- Backup -->
+            <div class="service-card reveal">
+              <span class="service-icon" aria-hidden="true">&#128203;</span>
+              <h3>Backup de Dados</h3>
+              <p>
+                Cópia segura de fotos, documentos e arquivos importantes
+                antes de qualquer serviço. Incluso nos pacotes de
+                formatação ou contratado de forma avulsa.
+              </p>
+            </div>
+
+            <!-- Hardware / SSD -->
+            <div class="service-card reveal">
+              <span class="service-icon" aria-hidden="true">&#128268;</span>
+              <h3>Hardware e Componentes</h3>
+              <p>
+                Instalação de SSD com migração do sistema ou dados,
+                troca de memória RAM, fonte de alimentação e outros
+                componentes. Peça cobrada à parte.
+              </p>
+            </div>
+
+            <!-- Combos -->
+            <div class="service-card reveal">
+              <span class="service-icon" aria-hidden="true">&#127381;</span>
+              <h3>Combos com Desconto</h3>
+              <p>
+                Pacotes que combinam limpeza, formatação e hardware
+                por um preço especial. Ideal para quem quer o computador
+                completamente renovado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================== PRECOS =================== -->
+      <section id="precos" class="section">
+        <div class="container">
+          <h2 class="section-title reveal">Tabela de Preços</h2>
+          <p style="color: var(--text-muted); font-size: 1rem; margin-top: -2rem; margin-bottom: 2.5rem;" class="reveal">
+            Pagamento à vista ou PIX.
+          </p>
+
+          <!-- Diagnóstico -->
+          <h3 class="pricing-category-title reveal">Diagnóstico</h3>
+          <div class="pricing-table-wrap reveal">
+            <table class="pricing-table" aria-label="Diagnóstico">
+              <thead>
+                <tr>
+                  <th scope="col">Serviço</th>
+                  <th scope="col">Descrição</th>
+                  <th scope="col">Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Diagnóstico Padrão</td>
+                  <td>Análise remota ou presencial com retorno em até 24h</td>
+                  <td><span class="price-free">Grátis</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Limpeza e Higienização -->
+          <h3 class="pricing-category-title reveal">Limpeza e Higienização</h3>
+          <div class="pricing-table-wrap reveal">
+            <table class="pricing-table" aria-label="Limpeza e Higienização">
+              <thead>
+                <tr>
+                  <th scope="col">Serviço</th>
+                  <th scope="col">Descrição</th>
+                  <th scope="col">Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Limpeza Desktop (Completa)</td>
+                  <td>Desmontagem, lavagem de coolers, cable management e troca de pasta térmica</td>
+                  <td>R$ 150,00</td>
+                </tr>
+                <tr>
+                  <td>Limpeza Notebook (Completa)</td>
+                  <td>Desmontagem minuciosa, desobstrução de ar e banho químico (se necessário)</td>
+                  <td>R$ 180,00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Formatação e Sistema -->
+          <h3 class="pricing-category-title reveal">Formatação e Sistema</h3>
+          <div class="pricing-table-wrap reveal">
+            <table class="pricing-table" aria-label="Formatação e Sistema">
+              <thead>
+                <tr>
+                  <th scope="col">Serviço</th>
+                  <th scope="col">Descrição</th>
+                  <th scope="col">Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Formatação Básica (Essencial)</td>
+                  <td>Instalação do Windows, drivers e programas básicos. Sem backup de dados.</td>
+                  <td>R$ 100,00</td>
+                </tr>
+                <tr>
+                  <td>Formatação com Backup Especial</td>
+                  <td>Salvamento seguro de fotos/documentos + sistema novo + drivers e programas básicos</td>
+                  <td>R$ 150,00</td>
+                </tr>
+                <tr>
+                  <td>Formatação + Performance</td>
+                  <td>Sistema novo + backup e restauração de arquivos + otimização de desempenho + limpeza e higienização</td>
+                  <td>R$ 250,00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Hardware -->
+          <h3 class="pricing-category-title reveal">Hardware e Componentes</h3>
+          <div class="pricing-table-wrap reveal">
+            <table class="pricing-table" aria-label="Hardware e Componentes">
+              <thead>
+                <tr>
+                  <th scope="col">Serviço</th>
+                  <th scope="col">Descrição</th>
+                  <th scope="col">Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Instalação de SSD</td>
+                  <td>Instalação física do SSD + migração de dados ou sistema operacional</td>
+                  <td>R$ 70,00</td>
+                </tr>
+                <tr>
+                  <td>Substituição de Peças</td>
+                  <td>Mão de obra para troca de componente (RAM, fonte, placa de vídeo etc.) — peça não inclusa</td>
+                  <td>R$ 50,00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Combos -->
+          <h3 class="pricing-category-title reveal">Combos com Desconto Especial</h3>
+          <div class="pricing-table-wrap reveal">
+            <table class="pricing-table" aria-label="Combos com Desconto">
+              <thead>
+                <tr>
+                  <th scope="col">Serviço</th>
+                  <th scope="col">Descrição</th>
+                  <th scope="col">Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Combo PC Novo de Novo</td>
+                  <td>Formatação c/ backup + limpeza física completa + troca de pasta térmica + drivers + otimizações de performance</td>
+                  <td>R$ 250,00</td>
+                </tr>
+                <tr>
+                  <td>Combo SSD</td>
+                  <td>Instalação física do seu SSD + formatação básica (Windows voando) — SSD não incluso</td>
+                  <td>R$ 170,00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="pricing-note reveal">
+            * Valores referentes à mão de obra. Peças e componentes são cobrados à parte.
+            Combinações de serviços podem ter desconto — consulte antes de fechar.
+          </p>
+        </div>
+      </section>
+
+      <!-- =================== CONTATO =================== -->
+      <section id="contato" class="section section-alt">
+        <div class="container">
+          <h2 class="section-title reveal">Solicitar Atendimento</h2>
+          <p class="contact-subtitle reveal">
+            Entre em contato para agendar ou tirar dúvidas.
+          </p>
+
+          <div class="contact-links">
+            <a
+              href="https://wa.me/5500000000000"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-card reveal"
+              aria-label="WhatsApp"
+            >
+              <span class="contact-icon" aria-hidden="true">&#128242;</span>
+              <span class="contact-label">WhatsApp</span>
+              <span class="contact-value">(00) 00000-0000</span>
+            </a>
+            <a
+              href="mailto:felype.nasc@hotmail.com"
+              class="contact-card reveal"
+              aria-label="Email"
+            >
+              <span class="contact-icon" aria-hidden="true">&#9993;</span>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">felype.nasc@hotmail.com</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>
+          &copy; <span id="footer-year"></span> Felype Nascimento.
+          Todos os direitos reservados.
+        </p>
+        <div class="footer-links">
+          <a href="index.html">Portfolio</a>
+          <a href="mailto:felype.nasc@hotmail.com">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/background.js"></script>
+    <script>
+      (function () {
+        'use strict';
+
+        // Theme
+        var isDark = localStorage.getItem('theme') !== 'light';
+
+        function applyTheme(dark) {
+          isDark = dark;
+          document.body.classList.toggle('light-theme', !dark);
+          var icon = document.getElementById('theme-icon');
+          if (icon) icon.textContent = dark ? '\u2600' : '\u263D';
+          localStorage.setItem('theme', dark ? 'dark' : 'light');
+        }
+
+        var themeToggle = document.getElementById('theme-toggle');
+        if (themeToggle) {
+          themeToggle.addEventListener('click', function () {
+            applyTheme(!isDark);
+          });
+        }
+
+        // Hamburger menu
+        var hamburger = document.getElementById('hamburger');
+        var navLinks  = document.getElementById('nav-links');
+
+        if (hamburger && navLinks) {
+          hamburger.addEventListener('click', function () {
+            var open = navLinks.classList.toggle('open');
+            hamburger.classList.toggle('open', open);
+            hamburger.setAttribute('aria-expanded', String(open));
+          });
+
+          navLinks.querySelectorAll('a').forEach(function (a) {
+            a.addEventListener('click', function () {
+              navLinks.classList.remove('open');
+              hamburger.classList.remove('open');
+              hamburger.setAttribute('aria-expanded', 'false');
+            });
+          });
+        }
+
+        // Navbar scroll state
+        var header = document.getElementById('header');
+        window.addEventListener('scroll', function () {
+          if (header) header.classList.toggle('scrolled', window.scrollY > 60);
+        }, { passive: true });
+
+        // Reveal animations
+        var revealObs = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                revealObs.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+        );
+
+        document.querySelectorAll('.reveal').forEach(function (el) {
+          revealObs.observe(el);
+        });
+
+        // Footer year
+        var yearEl = document.getElementById('footer-year');
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+        // Init
+        applyTheme(isDark);
+      }());
+    </script>
+  </body>
+</html>
