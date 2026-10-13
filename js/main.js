@@ -14,7 +14,7 @@
       'nav.contato':      'Contato',
 
       'hero.greeting': 'Olá, sou',
-      'hero.subtitle': 'Foco em backend',
+      'hero.subtitle': 'Engenheiro de Software Fullstack',
       'hero.cta1':     'Ver Projetos',
       'hero.cta2':     'Fale Comigo',
 
@@ -76,7 +76,7 @@
       'nav.contato':      'Contact',
 
       'hero.greeting': "Hi, I'm",
-      'hero.subtitle': 'Backend-focused \u00b7',
+      'hero.subtitle': 'Fullstack Software Engineer',
       'hero.cta1':     'View Projects',
       'hero.cta2':     'Get in Touch',
 
