@@ -1,6 +1,4 @@
-# FelypeNasc.github.io
-
-Portfolio pessoal de **Felype Nascimento** — Fullstack Software Engineer com foco em backend.
+Fullstack Software Engineer com foco em backend.
 
 ## Sobre
 
@@ -19,8 +17,7 @@ Portfolio pessoal de **Felype Nascimento** — Fullstack Software Engineer com f
 | Projeto | Descrição |
 |---------|-----------|
 | [Job Fit Check](https://github.com/FelypeNasc/job-fit-check) | Webscraping de vagas LinkedIn + análise de currículo com IA |
-| [NotebookRAG](https://github.com/FelypeNasc/notebookRAG) | RAG sobre notebooks Jupyter para consultas em linguagem natural |
-| [PDF Expert](https://github.com/FelypeNasc/pdfexpert) | Manipulação e análise de arquivos PDF |
+| [NotebookRAG](https://github.com/FelypeNasc/notebookRAG) | Sistema de conversação com documentos utilizando RAG e AI aplicada |
 
 ## Contato
 
