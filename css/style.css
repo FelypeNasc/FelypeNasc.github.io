@@ -1067,19 +1067,27 @@ body.light-theme {
   background: var(--primary-glow-sm);
 }
 
-.pricing-table td:first-child {
+.pricing-table td p:first-child {
   font-weight: 600;
   color: var(--text);
 }
 
-.pricing-table td:nth-child(2) {
+.pricing-table td p:nth-child(2) {
   color: var(--text-muted);
 }
 
-.pricing-table td:last-child {
+.pricing-table td:nth-child(1) { width: 80%; }
+.pricing-table td:nth-child(2) { width: 20%; text-align: center; }
+
+.pricing-table td:nth-child(2) p {
   font-weight: 700;
   color: var(--primary);
-  white-space: nowrap;
+  text-wrap: nowrap;
+  text: center;
+}
+
+.pricing-table td:nth-child(2) p.price-free {
+  color: #22c55e;
 }
 
 /* Pricing category heading */

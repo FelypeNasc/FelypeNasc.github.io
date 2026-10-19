@@ -56,12 +56,17 @@
         padding: 1.75rem;
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+        transition:
+          border-color 0.3s,
+          box-shadow 0.3s,
+          transform 0.3s;
       }
 
       .service-card:hover {
         border-color: var(--border-hover);
-        box-shadow: 0 0 32px var(--primary-glow), var(--shadow-card);
+        box-shadow:
+          0 0 32px var(--primary-glow),
+          var(--shadow-card);
         transform: translateY(-4px);
       }
 
@@ -94,7 +99,9 @@
       }
 
       @media (max-width: 600px) {
-        .services-grid { grid-template-columns: 1fr; }
+        .services-grid {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </head>
@@ -104,7 +111,9 @@
     <!-- NAVBAR -->
     <header id="header">
       <nav class="nav container">
-        <a href="index.html" class="nav-logo">Felype<span class="accent">.</span></a>
+        <a href="index.html" class="nav-logo"
+          >Felype<span class="accent">.</span></a
+        >
 
         <ul class="nav-links" id="nav-links" role="list">
           <li><a href="index.html">← Portfolio</a></li>
@@ -133,15 +142,17 @@
       <!-- =================== HERO =================== -->
       <section class="page-hero">
         <div class="container">
-          <span class="page-hero-icon reveal" aria-hidden="true">&#128187;</span>
+          <span class="page-hero-icon reveal" aria-hidden="true"
+            >&#128187;</span
+          >
           <h1 class="page-hero-title reveal">
             Manutenção de <span class="accent">Computadores</span>
           </h1>
           <p class="page-hero-subtitle reveal">
-            Serviço especializado para moradores do condomínio.
-            Atendimento rápido, preço justo e sem precisar sair de casa.
+            Serviço especializado para moradores do condomínio. Atendimento
+            rápido, preço justo e sem precisar sair de casa.
           </p>
-          <div class="hero-cta reveal" style="justify-content: center;">
+          <div class="hero-cta reveal" style="justify-content: center">
             <a href="#precos" class="btn btn-primary">Ver Tabela de Preços</a>
             <a href="#contato" class="btn btn-outline">Solicitar Atendimento</a>
           </div>
@@ -160,8 +171,9 @@
               <h3>Diagnóstico</h3>
               <p>
                 Análise completa do computador com retorno em até 24h.
-                Identifica lentidão, travamentos, telas azuis e qualquer
-                falha de hardware ou software. <strong style="color: var(--primary)">Grátis.</strong>
+                Identifica lentidão, travamentos, telas azuis e qualquer falha
+                de hardware ou software.
+                <strong style="color: var(--primary)">Grátis.</strong>
               </p>
             </div>
 
@@ -170,9 +182,9 @@
               <span class="service-icon" aria-hidden="true">&#129529;</span>
               <h3>Limpeza e Higienização</h3>
               <p>
-                Desmontagem, remoção de poeira, limpeza dos coolers,
-                cable management e renovação de pasta térmica.
-                Disponível para desktop e notebook.
+                Desmontagem, remoção de poeira, limpeza dos coolers, cable
+                management e renovação de pasta térmica. Disponível para desktop
+                e notebook.
               </p>
             </div>
 
@@ -181,9 +193,9 @@
               <span class="service-icon" aria-hidden="true">&#128190;</span>
               <h3>Formatação e Sistema</h3>
               <p>
-                Reinstalação do Windows, drivers, programas essenciais
-                e antivírus. Pacotes com backup de dados e otimização
-                de desempenho disponíveis.
+                Reinstalação do Windows, drivers, programas essenciais e
+                antivírus. Pacotes com backup de dados e otimização de
+                desempenho disponíveis.
               </p>
             </div>
 
@@ -192,9 +204,9 @@
               <span class="service-icon" aria-hidden="true">&#128203;</span>
               <h3>Backup de Dados</h3>
               <p>
-                Cópia segura de fotos, documentos e arquivos importantes
-                antes de qualquer serviço. Incluso nos pacotes de
-                formatação ou contratado de forma avulsa.
+                Cópia segura de fotos, documentos e arquivos importantes antes
+                de qualquer serviço. Incluso nos pacotes de formatação ou
+                contratado de forma avulsa.
               </p>
             </div>
 
@@ -203,9 +215,9 @@
               <span class="service-icon" aria-hidden="true">&#128268;</span>
               <h3>Hardware e Componentes</h3>
               <p>
-                Instalação de SSD com migração do sistema ou dados,
-                troca de memória RAM, fonte de alimentação e outros
-                componentes. Peça cobrada à parte.
+                Instalação de SSD com migração do sistema ou dados, troca de
+                memória RAM, fonte de alimentação e outros componentes. Peça
+                cobrada à parte.
               </p>
             </div>
 
@@ -214,8 +226,8 @@
               <span class="service-icon" aria-hidden="true">&#127918;</span>
               <h3>Desbloqueio e manutenção de portáteis e handhelds</h3>
               <p>
-                Limpeza e pequenas manutenções em GameBoy, Nintendo 3DS,
-                PSP, PS Vita e outros portáteis.
+                Limpeza e pequenas manutenções em GameBoy, Nintendo 3DS, PSP, PS
+                Vita e outros portáteis.
               </p>
             </div>
 
@@ -224,9 +236,9 @@
               <span class="service-icon" aria-hidden="true">&#127381;</span>
               <h3>Combos com Desconto</h3>
               <p>
-                Pacotes que combinam limpeza, formatação e hardware
-                por um preço especial. Ideal para quem quer o computador
-                completamente renovado.
+                Pacotes que combinam limpeza, formatação e hardware por um preço
+                especial. Ideal para quem quer o computador completamente
+                renovado.
               </p>
             </div>
           </div>
@@ -237,7 +249,15 @@
       <section id="precos" class="section">
         <div class="container">
           <h2 class="section-title reveal">Tabela de Preços</h2>
-          <p style="color: var(--text-muted); font-size: 1rem; margin-top: -2rem; margin-bottom: 2.5rem;" class="reveal">
+          <p
+            style="
+              color: var(--text-muted);
+              font-size: 1rem;
+              margin-top: -2rem;
+              margin-bottom: 2.5rem;
+            "
+            class="reveal"
+          >
             Pagamento à vista no PIX ou cartão.
           </p>
 
@@ -245,18 +265,13 @@
           <h3 class="pricing-category-title reveal">Diagnóstico</h3>
           <div class="pricing-table-wrap reveal">
             <table class="pricing-table" aria-label="Diagnóstico">
-              <thead>
-                <tr>
-                  <th scope="col">Serviço</th>
-                  <th scope="col">Descrição</th>
-                  <th scope="col">Valor</th>
-                </tr>
-              </thead>
               <tbody>
                 <tr>
-                  <td>Diagnóstico Padrão</td>
-                  <td>Análise remota ou presencial com retorno em até 24h</td>
-                  <td><span class="price-free">Grátis</span></td>
+                  <td>
+                    <p>Diagnóstico Padrão</p>
+                    <p>Análise remota ou presencial com retorno em até 24h</p>
+                  </td>
+                  <td><p class="price-free">Grátis</p></td>
                 </tr>
               </tbody>
             </table>
@@ -266,23 +281,26 @@
           <h3 class="pricing-category-title reveal">Limpeza e Higienização</h3>
           <div class="pricing-table-wrap reveal">
             <table class="pricing-table" aria-label="Limpeza e Higienização">
-              <thead>
-                <tr>
-                  <th scope="col">Serviço</th>
-                  <th scope="col">Descrição</th>
-                  <th scope="col">Valor</th>
-                </tr>
-              </thead>
               <tbody>
                 <tr>
-                  <td>Limpeza Desktop (Completa)</td>
-                  <td>Desmontagem, lavagem de coolers, cable management e troca de pasta térmica</td>
-                  <td>R$ 150,00</td>
+                  <td>
+                    <p>Limpeza Desktop (Completa)</p>
+                    <p>
+                      Desmontagem, lavagem de coolers, cable management e troca
+                      de pasta térmica
+                    </p>
+                  </td>
+                  <td><p>R$ 150,00</p></td>
                 </tr>
                 <tr>
-                  <td>Limpeza Notebook (Completa)</td>
-                  <td>Desmontagem minuciosa, desobstrução de ar e banho químico (se necessário)</td>
-                  <td>R$ 180,00</td>
+                  <td>
+                    <p>Limpeza Notebook (Completa)</p>
+                    <p>
+                      Desmontagem minuciosa, desobstrução de ar e banho químico
+                      (se necessário)
+                    </p>
+                  </td>
+                  <td><p>R$ 180,00</p></td>
                 </tr>
               </tbody>
             </table>
@@ -292,28 +310,36 @@
           <h3 class="pricing-category-title reveal">Formatação e Sistema</h3>
           <div class="pricing-table-wrap reveal">
             <table class="pricing-table" aria-label="Formatação e Sistema">
-              <thead>
-                <tr>
-                  <th scope="col">Serviço</th>
-                  <th scope="col">Descrição</th>
-                  <th scope="col">Valor</th>
-                </tr>
-              </thead>
               <tbody>
                 <tr>
-                  <td>Formatação Básica (Essencial)</td>
-                  <td>Instalação do Windows ou Linux e drivers. Sem backup de dados.</td>
-                  <td>R$ 100,00</td>
+                  <td>
+                    <p>Formatação Básica (Essencial)</p>
+                    <p>
+                      Instalação do Windows ou Linux e drivers. Sem backup de
+                      dados.
+                    </p>
+                  </td>
+                  <td><p>R$ 100,00</p></td>
                 </tr>
                 <tr>
-                  <td>Formatação com Backup Especial</td>
-                  <td>Salvamento seguro de fotos/documentos + sistema novo + drivers e programas básicos</td>
-                  <td>R$ 150,00</td>
+                  <td>
+                    <p>Formatação com Backup Especial</p>
+                    <p>
+                      Salvamento seguro de fotos/documentos + sistema novo +
+                      drivers e programas básicos
+                    </p>
+                  </td>
+                  <td><p>R$ 150,00</p></td>
                 </tr>
                 <tr>
-                  <td>Formatação + Performance</td>
-                  <td>Sistema novo + backup e restauração de arquivos + otimização de desempenho + limpeza e higienização</td>
-                  <td>R$ 250,00</td>
+                  <td>
+                    <p>Formatação + Performance</p>
+                    <p>
+                      Sistema novo + backup e restauração de arquivos +
+                      otimização de desempenho + limpeza e higienização
+                    </p>
+                  </td>
+                  <td><p>R$ 250,00</p></td>
                 </tr>
               </tbody>
             </table>
@@ -323,83 +349,101 @@
           <h3 class="pricing-category-title reveal">Hardware e Componentes</h3>
           <div class="pricing-table-wrap reveal">
             <table class="pricing-table" aria-label="Hardware e Componentes">
-              <thead>
-                <tr>
-                  <th scope="col">Serviço</th>
-                  <th scope="col">Descrição</th>
-                  <th scope="col">Valor</th>
-                </tr>
-              </thead>
               <tbody>
                 <tr>
-                  <td>Instalação de SSD</td>
-                  <td>Instalação física do SSD + migração de dados ou sistema operacional</td>
-                  <td>R$ 100,00</td>
+                  <td>
+                    <p>Instalação de SSD</p>
+                    <p>
+                      Instalação física do SSD + migração de dados ou sistema
+                      operacional
+                    </p>
+                  </td>
+                  <td><p>R$ 100,00</p></td>
                 </tr>
                 <tr>
-                  <td>Substituição de Peças</td>
-                  <td>Mão de obra para troca de componente (RAM, fonte, placa de vídeo etc.) e instalação de drivers, se necessário - <i>peça não inclusa</i></td>
-                  <td>R$ 50,00</td>
+                  <td>
+                    <p>Substituição de Peças</p>
+                    <p>
+                      Mão de obra para troca de componente (RAM, fonte, placa de
+                      vídeo etc.) e instalação de drivers, se necessário -
+                      <i>peça não inclusa</i>
+                    </p>
+                  </td>
+                  <td><p>R$ 50,00</p></td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <!-- Desbloqueio e Portáteis -->
-          <h3 class="pricing-category-title reveal">Desbloqueio e manutenção de Portáteis</h3>
+          <h3 class="pricing-category-title reveal">
+            Desbloqueio e manutenção de Portáteis
+          </h3>
           <div class="pricing-table-wrap reveal">
-            <table class="pricing-table" aria-label="Desbloqueio e manutenção de Portáteis">
-              <thead>
-                <tr>
-                  <th scope="col">Serviço</th>
-                  <th scope="col">Descrição</th>
-                  <th scope="col">Valor</th>
-                </tr>
-              </thead>
+            <table
+              class="pricing-table"
+              aria-label="Desbloqueio e manutenção de Portáteis"
+            >
               <tbody>
                 <tr>
-                  <td>Desbloqueio</td>
-                  <td>Desbloqueio por software de PSP, PSVita, DS, 3DS, Nintendo Wii e outros</td>
-                  <td>R$ 50,00</td>
+                  <td>
+                    <p>Desbloqueio</p>
+                    <p>
+                      Desbloqueio por software de PSP, PSVita, DS, 3DS, Nintendo
+                      Wii e outros
+                    </p>
+                  </td>
+                  <td><p>R$ 50,00</p></td>
                 </tr>
                 <tr>
-                  <td>Limpeza e Manutenção de Portáteis</td>
-                  <td>Limpeza interna e pequenos reparos em GameBoy, 3DS, PSP, PS Vita e similares</td>
-                  <td>R$ 100,00</td>
+                  <td>
+                    <p>Limpeza e Manutenção de Portáteis</p>
+                    <p>
+                      Limpeza interna e pequenos reparos em GameBoy, 3DS, PSP, PS
+                      Vita e similares
+                    </p>
+                  </td>
+                  <td><p>R$ 100,00</p></td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <!-- Combos -->
-          <h3 class="pricing-category-title reveal">Combos com Desconto Especial</h3>
+          <h3 class="pricing-category-title reveal">
+            Combos com Desconto Especial
+          </h3>
           <div class="pricing-table-wrap reveal">
             <table class="pricing-table" aria-label="Combos com Desconto">
-              <thead>
-                <tr>
-                  <th scope="col">Serviço</th>
-                  <th scope="col">Descrição</th>
-                  <th scope="col">Valor</th>
-                </tr>
-              </thead>
               <tbody>
                 <tr>
-                  <td>Combo PC Novo de Novo</td>
-                  <td>Formatação c/ backup + limpeza física completa + troca de pasta térmica + drivers + otimizações de performance</td>
-                  <td>R$ 250,00</td>
+                  <td>
+                    <p>Combo PC Novo de Novo</p>
+                    <p>
+                      Formatação c/ backup + limpeza física completa + troca de
+                      pasta térmica + drivers + otimizações de performance
+                    </p>
+                  </td>
+                  <td><p>R$ 250,00</p></td>
                 </tr>
                 <tr>
-                  <td>Combo SSD</td>
-                  <td>Instalação física do seu SSD + formatação básica (Windows voando) — SSD não incluso</td>
-                  <td>R$ 170,00</td>
+                  <td>
+                    <p>Combo SSD</p>
+                    <p>
+                      Instalação física do seu SSD + formatação básica (Windows
+                      voando) — SSD não incluso
+                    </p>
+                  </td>
+                  <td><p>R$ 170,00</p></td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <p class="pricing-note reveal">
-            * Valores referentes à mão de obra. Peças e componentes são cobrados à parte.
-            Combinações de serviços podem ter desconto — consulte antes de fechar.
+            * Valores referentes à mão de obra. Peças e componentes são cobrados
+            à parte. Combinações de serviços podem ter desconto — consulte antes
+            de fechar.
           </p>
         </div>
       </section>
@@ -441,8 +485,8 @@
     <footer class="footer">
       <div class="container footer-inner">
         <p>
-          &copy; <span id="footer-year"></span> Felype Nascimento.
-          Todos os direitos reservados.
+          &copy; <span id="footer-year"></span> Felype Nascimento. Todos os
+          direitos reservados.
         </p>
         <div class="footer-links">
           <a href="index.html">Portfolio</a>
@@ -476,7 +520,7 @@
 
         // Hamburger menu
         var hamburger = document.getElementById('hamburger');
-        var navLinks  = document.getElementById('nav-links');
+        var navLinks = document.getElementById('nav-links');
 
         if (hamburger && navLinks) {
           hamburger.addEventListener('click', function () {
@@ -496,9 +540,14 @@
 
         // Navbar scroll state
         var header = document.getElementById('header');
-        window.addEventListener('scroll', function () {
-          if (header) header.classList.toggle('scrolled', window.scrollY > 60);
-        }, { passive: true });
+        window.addEventListener(
+          'scroll',
+          function () {
+            if (header)
+              header.classList.toggle('scrolled', window.scrollY > 60);
+          },
+          { passive: true },
+        );
 
         // Reveal animations
         var revealObs = new IntersectionObserver(
@@ -510,7 +559,7 @@
               }
             });
           },
-          { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+          { threshold: 0.12, rootMargin: '0px 0px -40px 0px' },
         );
 
         document.querySelectorAll('.reveal').forEach(function (el) {
@@ -523,7 +572,7 @@
 
         // Init
         applyTheme(isDark);
-      }());
+      })();
     </script>
   </body>
 </html>
